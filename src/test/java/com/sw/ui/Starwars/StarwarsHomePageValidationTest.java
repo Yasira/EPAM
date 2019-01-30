@@ -12,6 +12,12 @@ public class StarwarsHomePageValidationTest extends CommonTest{
 	StarWarsHomePageObjects homeObjects;
 	StarwarsLibrary lib;
 	  
+	/**
+	 * 
+	 * Valiodating Starwars Social Pages
+	 * @param args
+	 * @throws Exception
+	 */
      
 	 @Test(groups= {"FunctionalTest"}, dataProvider="SocialPage")
 	 public void verifyStarwarsSocialPage(String args[])  throws Exception{
@@ -32,6 +38,10 @@ public class StarwarsHomePageValidationTest extends CommonTest{
 			
 	 }
 	
+	 /**
+	  * Validating STarwars Home Menu Options
+	  * @throws Exception
+	  */
 	 @Test(groups= {"FunctionalTest"})
 	 public void validateHomePageMenuOptions() throws Exception{
 		 homeObjects=new StarWarsHomePageObjects(driver);
@@ -57,6 +67,11 @@ public class StarwarsHomePageValidationTest extends CommonTest{
 		
 		 
 	 }
+	 
+	 /**
+	  * Valoidating  Starwars Search field
+	  * @throws Exception
+	  */
 		
 	 @Test(groups= {"FunctionalTest1"})
 	 public void validateSearchFieldTest() throws Exception{
