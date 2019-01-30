@@ -69,11 +69,11 @@ public class StarwarsHomePageValidationTest extends CommonTest{
 	 }
 	 
 	 /**
-	  * Valoidating  Starwars Search field
+	  * Validating  Starwars Search field
 	  * @throws Exception
 	  */
 		
-	 @Test(groups= {"FunctionalTest1"})
+	 @Test(groups= {"FunctionalTest"})
 	 public void validateSearchFieldTest() throws Exception{
 		 homeObjects=new StarWarsHomePageObjects(driver);
 		 lib=new StarwarsLibrary(driver);
@@ -81,6 +81,26 @@ public class StarwarsHomePageValidationTest extends CommonTest{
 		 lib.waitForElementIsDisplayed(homeObjects.StarwarsLogo,30);
 		 homeObjects.setSearchStarWars("Star wars");
 		 assertTrue(homeObjects.getSearchResult(),"Search result not displayed");
+	 }
+	 
+	 
+	 /**
+	  * Validating  ShowDisney Option
+	  * @throws Exception
+	  */
+		
+	 @Test(groups= {"FunctionalTest1"})
+	 public void validateShowAndHideDisneyOption() throws Exception{
+		 homeObjects=new StarWarsHomePageObjects(driver);
+		 lib=new StarwarsLibrary(driver);
+			
+		 lib.waitForElementIsDisplayed(homeObjects.StarwarsLogo,30);
+		 homeObjects.clickShowDisney();
+		 assertTrue(lib.isElementDisplayed(homeObjects.DisneyLogo),"Disney Logo is not shown");
+		 assertTrue(lib.isElementDisplayed(homeObjects.HideDisney),"Hide Disney option is not shown");
+		 homeObjects.HideDisney.click();
+		 assertTrue(lib.isElementDisplayed(homeObjects.ShowDisney),"Show Disney Logo is not shown");
+			
 	 }
 	
 	 @DataProvider(name="SocialPage")
