@@ -89,7 +89,7 @@ public class StarwarsHomePageValidationTest extends CommonTest{
 	  * @throws Exception
 	  */
 		
-	 @Test(groups= {"FunctionalTest1"})
+	 @Test(groups= {"FunctionalTest"})
 	 public void validateShowAndHideDisneyOption() throws Exception{
 		 homeObjects=new StarWarsHomePageObjects(driver);
 		 lib=new StarwarsLibrary(driver);

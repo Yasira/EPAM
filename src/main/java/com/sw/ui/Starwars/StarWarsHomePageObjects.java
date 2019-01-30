@@ -104,12 +104,13 @@ public class StarWarsHomePageObjects {
 	WebElement SearchResultText;
 	
 	
-	StarwarsLibrary lib=new StarwarsLibrary(driver);
+	StarwarsLibrary  lib;
 	
 	
 	public StarWarsHomePageObjects(WebDriver driver){
 		this.driver = driver;
 		//This initElements method will create  all WebElements
+		lib=new StarwarsLibrary(driver);
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -124,6 +125,7 @@ public class StarWarsHomePageObjects {
 	public void clickShowDisney()  throws Exception{
 		ShowDisney.click();
 		lib.waitForElementIsDisplayed(DisneyLogo, 20);
+		
 	}
 	
 	public void setSearchStarWars(String starwars)  throws Exception{

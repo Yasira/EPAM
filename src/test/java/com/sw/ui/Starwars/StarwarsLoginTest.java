@@ -6,8 +6,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.util.Properties;
 
-
-
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 
@@ -90,6 +89,43 @@ public class StarwarsLoginTest extends CommonTest {
 	    }
 	    
 	    
+	    @Test(groups = { "FunctionalTest"},dataProvider="InvalidLoginDetails")
+	    public void starwarsLoginWithInavlidDataTest(String args[])  throws Exception{
+	    	pageObjects=new StarwarsSignUpPage(driver);
+	    	homeObjects=new StarWarsHomePageObjects(driver);
+	    	lib=new StarwarsLibrary(driver);
+	        properties.load(new FileReader(new File(System.getProperty("user.dir")+"\\configdata\\config.properties")));
+	          
+	   	    lib.waitForElementIsDisplayed(homeObjects.StarwarsLogo,30);
+		    assertTrue(lib.isElementDisplayed(homeObjects.StarwarsLogo)," StarWars Logo not displayed");
+	        //Login in to the starwars account
+	        homeObjects.clickSignInLink();
+	        Thread.sleep(2000);
+	        driver.switchTo().frame(0);
+	        //lib.waitForElementIsDisplayed(pageObjects.username,20);
+		    pageObjects.setEmailId(properties.getProperty(args[0]));
+	        pageObjects.setPassword(properties.getProperty(args[1]));
+	        pageObjects.clickSignIn();
+	        lib.waitForElementIsDisplayed(pageObjects.InvalidDetails,20);
+	        assertTrue(lib.isElementDisplayed(pageObjects.InvalidDetails)," StarWars Logo not displayed");
+		    assertTrue(pageObjects.InvalidDetails.getText().contains(args[2]),"Error message is not as expected, Expected"+ args[2]);  
+	     
+	    }
+	    
+	    
+	    @DataProvider(name="InvalidLoginDetails")
+	    public Object[][] getDataFromDataprovider(){
+	    return new Object[][]
+	    	{
+	            { "yasihere@gmail.com"," ","We need your username/email address and password." },
+	            { " ", "Starwars123#","We need your username/email address and password." },
+	            { "test@gmail.com", "test123#","The credentials you entered are incorrect." },
+	            { " "," ","We need your username/email address and password." },
+	            { "yasihere@gmail.com", "yetdtey","The credentials you entered are incorrect." },
+	            { "test", " ","We need your username/email address and password." }
+	        };
+
+	    }
 	 
 
 }

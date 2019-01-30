@@ -59,16 +59,23 @@ public class StarwarsSignUpPage {
 	@FindBy(xpath="//div[@class='btn-group']/a[contains(.,'Facebook')]")
 	WebElement facebookSign;
 	
-	@FindBy(className="//div[@class='btn-group']/a[contains(.,'Google')]")
+	@FindBy(xpath="//div[@class='btn-group']/a[contains(.,'Google')]")
 	WebElement GoogleSign;
 	
-	@FindBy(className="//div[@class='btn-group']/a[contains(.,'Account')]")
+	@FindBy(xpath="//div[@class='btn-group']/a[contains(.,'Account')]")
 	WebElement createNewAccount;
 	
 	
 	
-	@FindBy(className=".//*[@id='nav-utility']/div[2]/div[2]/div[1]/span[1]")
+	@FindBy(xpath=".//*[@id='nav-utility']/div[2]/div[2]/div[1]/span[1]")
 	WebElement UserID;
+	
+	@FindBy(xpath=".//*[@id='did-ui-view']/div/section/div/div/div")
+	WebElement InvalidDetails;
+	
+	
+	//*[@id='did-ui-view']/div/section/div/div/div[contains(.,'We need your username/email address and password')]
+	
 	
 	
 	public StarwarsSignUpPage(WebDriver driver){
