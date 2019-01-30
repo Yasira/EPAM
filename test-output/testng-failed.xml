@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="test(failed)">
+    <groups>
+      <run>
+        <include name="FunctionalTest1"/>
+        <include name="commonTest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.sw.ui.Starwars.StarwarsHomePageValidationTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="validateSearchFieldTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.sw.ui.Starwars.StarwarsHomePageValidationTest -->
+    </classes>
+  </test> <!-- test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
