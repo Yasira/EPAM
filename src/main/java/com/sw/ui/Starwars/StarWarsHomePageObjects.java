@@ -1,5 +1,6 @@
 package com.sw.ui.Starwars;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -7,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class StarWarsHomePageObjects {
 	
+	private static final Logger log = Logger.getLogger(StarWarsHomePageObjects.class);
 
 	WebDriver driver;
 	

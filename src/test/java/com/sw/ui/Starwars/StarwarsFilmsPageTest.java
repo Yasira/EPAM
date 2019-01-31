@@ -2,6 +2,7 @@ package com.sw.ui.Starwars;
 
 import static org.testng.Assert.assertTrue;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -10,6 +11,8 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class StarwarsFilmsPageTest extends CommonTest {
+	
+	private static final Logger log = Logger.getLogger(StarwarsFilmsPageTest.class);
 	
 	StarWarsHomePageObjects homeObjects;
 	StarwarsLibrary lib;
@@ -73,8 +76,7 @@ public class StarwarsFilmsPageTest extends CommonTest {
 			 assertTrue(lib.isElementDisplayed(filmObjects.ViewIMDB),"First Film  View IMDB is not shown");
 			 assertTrue(lib.isElementDisplayed(filmObjects.ViewWookee),"First Film  view Wookeepedia is not shown");
 						
-			 assertTrue(lib.isElementDisplayed(filmObjects.Characters),"Characters option is not shown");
-					
+			
 		 }
 		 
 		 /**
@@ -108,14 +110,12 @@ public class StarwarsFilmsPageTest extends CommonTest {
 				 assertTrue(lib.isElementDisplayed(filmObjects.BuyMovie),"First Film  Buy movie option is not shown");
 				 assertTrue(lib.isElementDisplayed(filmObjects.ViewIMDB),"First Film  View IMDB is not shown");
 				 assertTrue(lib.isElementDisplayed(filmObjects.ViewWookee),"First Film  view Wookeepedia is not shown");
-				 assertTrue(lib.isElementDisplayed(filmObjects.Characters),"Characters option is not shown");			
-				 	
-			 }
+				 }
 			 
 			 
 			 /**
 				 * 
-				 * Valiodating Starwars Click on Film Link Option
+				 * Validating Starwars Click on Film Link Option
 				 * Expected Result: User should be able to see Films listed on the Films page
 				 * @param args
 				 * @throws Exception

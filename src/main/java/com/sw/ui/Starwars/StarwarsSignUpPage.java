@@ -1,5 +1,6 @@
 package com.sw.ui.Starwars;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -7,10 +8,11 @@ import org.openqa.selenium.support.PageFactory;
 
 public class StarwarsSignUpPage {
 	
+	private static final Logger log = Logger.getLogger(StarwarsSignUpPage.class);
 	WebDriver driver;
 
 	
-	@FindBy(name="firstName")
+	@FindBy(xpath=".//*[@id='did-ui-view']/div/section/section/form/section[1]/div[1]/div[1]/label/span[2]/input")
 	WebElement firstName;
 	
 	@FindBy(name="lastName")
@@ -47,8 +49,18 @@ public class StarwarsSignUpPage {
 	@FindBy(xpath="//div[@class='field ng-scope']/label/input")
 	WebElement updates;
 		
-	@FindBy(xpath="//div[@class='field field-username-email']/label/span/input")
+	@FindBy(xpath=".//*[@id='did-ui-view']/div/section/section/form/section/div[1]/div/label/span[2]/input")
 	WebElement username;
+	//html/body/div/div[@id='did-ui-view']/div/section/section/form/section/div[1]/div/label/span[2]/input
+	//*[@id='did-ui-view']/div/section/section/form/section/div[1]/div/label/span[2]/input
+	
+	
+	@FindBy(xpath="//iframe[contains(@src,'https://secure.starwars.com/_swdid/www.starwars.com?loc=en-US')]")
+	WebElement Iframe;
+	@FindBy(xpath=".//*[@id='did-ui-view']/div")
+	WebElement CloseButton;
+	
+	
 	
 	@FindBy(xpath=".//*[@id='did-ui-view']/div/section/section/form/section/div[2]/div/label/span[2]/input")
 	WebElement passwordSign;
@@ -62,7 +74,7 @@ public class StarwarsSignUpPage {
 	@FindBy(xpath="//div[@class='btn-group']/a[contains(.,'Google')]")
 	WebElement GoogleSign;
 	
-	@FindBy(xpath="//div[@class='btn-group']/a[contains(.,'Account')]")
+	@FindBy(xpath="//*[@id='did-ui-view']/div/section/section/form")
 	WebElement createNewAccount;
 	
 	
@@ -74,8 +86,12 @@ public class StarwarsSignUpPage {
 	WebElement InvalidDetails;
 	
 	
-	//*[@id='did-ui-view']/div/section/div/div/div[contains(.,'We need your username/email address and password')]
-	
+	@FindBy(xpath=".//*[@id='nav-utility']/div[2]/div[2]/div[1]/span[2]")
+	WebElement AccountDropDown;
+
+	@FindBy(xpath="//*[@id='nav-utility']/div[2]/div[2]/div[2]/div[2]")
+	WebElement LogOut;
+
 	
 	
 	public StarwarsSignUpPage(WebDriver driver){
@@ -94,8 +110,8 @@ public class StarwarsSignUpPage {
 	}
 	
 	public void  setPassword(String Password) throws Exception{
-		 lib.waitForElementIsDisplayed(password, 20);
-	     password.sendKeys(Password);
+		// lib.waitForElementIsDisplayed(password, 20);
+		passwordSign.sendKeys(Password);
 	}
 	public void clickSignIn() {
 		SignIn.click();

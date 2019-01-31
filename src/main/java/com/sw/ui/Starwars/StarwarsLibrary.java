@@ -1,7 +1,12 @@
 package com.sw.ui.Starwars;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.HashSet;
+import java.util.Properties;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,6 +15,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class StarwarsLibrary {
+	
+	private static final Logger log = Logger.getLogger(StarwarsLibrary.class);
 	
 	WebDriver driver;
 	
@@ -65,4 +72,21 @@ public class StarwarsLibrary {
 			}
 		}
 	 
+	  public static String readPropertiesFile(String file_name, String key) throws IOException{
+			System.out.println("file name is "+file_name);
+			
+			try{
+			Properties prop = new Properties();
+			FileInputStream fs = new FileInputStream(file_name);
+			prop.load(fs);
+			String value = prop.get(key).toString();
+			
+			//log.info("value is "+value);
+			return value;
+			}
+			catch(FileNotFoundException e){
+				
+				return null;
+			}
+	  }
 }

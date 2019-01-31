@@ -3,6 +3,7 @@ package com.sw.ui.Starwars;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,7 +13,8 @@ import org.openqa.selenium.support.PageFactory;
 
 public class StarwarsVideoPageObjects {
 	
-WebDriver driver;
+	private static final Logger log = Logger.getLogger(StarwarsVideoPageObjects.class);
+	WebDriver driver;
 	
 	@FindBy(xpath=".//*[@id='section-links']/li[2]/a/span[2]")
 	WebElement VideoLink;
@@ -54,6 +56,19 @@ WebDriver driver;
 	
 	@FindBy(xpath=".//*[@id='ref-1-5']/div[1]/div[3]/div/ul/div[1]/div/div/div")
      WebElement browseVideosLinksResultVideo;
+	
+	@FindBy(css="#player-gui > div.playkit-bottom-bar > div.playkit-left-controls > div.playkit-control-button-container.playkit-control-play-pause > button > div > i.playkit-icon.playkit-icon-play")
+    WebElement playVideoIcon;
+	
+	@FindBy(css="#player-gui > div.playkit-bottom-bar > div.playkit-left-controls > div.playkit-control-button-container.playkit-control-play-pause > button > div > i.playkit-icon.playkit-icon-pause")
+    WebElement pauseVideoIcon;
+	
+	@FindBy(css="#player-gui > div.playkit-bottom-bar > div.playkit-right-controls > div.playkit-control-button-container.playkit-volume-control > button > i.playkit-icon.playkit-icon-volume-waves")
+    WebElement VideoVolumeIcon;
+	
+	
+	
+	
 	
 	
 	
@@ -100,15 +115,18 @@ WebDriver driver;
 		
 		
 		System.out.println("Video Url : " + urlStr);
-		driver.navigate().to(urlStr);
+		//driver.navigate().to(urlStr);
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		//Click on play button
-		jse.executeScript("KalturaPlayer().play();" );
+		//jse.executeScript("KalturaPlayer().play();" );
 		Thread.sleep(2000);
 		//Pause
-		jse.executeScript("arguments[0].play();",PlayVideo );
+		jse.executeScript("arguments[0].play();",playVideoIcon );
+		Thread.sleep(2000);
+		
+		jse.executeScript("arguments[0].pause();",pauseVideoIcon );
 		Thread.sleep(2000);
 		//Play
 		//jse.executeScript("jwplayer().play();");

@@ -5,12 +5,15 @@ import static org.testng.Assert.assertTrue;
 import java.io.File;
 import java.io.FileReader;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 public class StarwarsVideoPageTest extends CommonTest {
+	
+	   private static final Logger log = Logger.getLogger(StarwarsLoginTest.class);
 	
 	
 	    StarwarsSignUpPage pageObjects;
@@ -78,7 +81,7 @@ public class StarwarsVideoPageTest extends CommonTest {
 	    /**
 	     * Verify  Play Video option
 	     * 
-	     *  Expected result: Video should be able to play, pause or stop
+	     *  Expected result: Video should be able to play, pause or stop.
 	     * @throws Exception
 	     */
 	    @Test(groups = { "FunctionalTest"})
@@ -100,11 +103,16 @@ public class StarwarsVideoPageTest extends CommonTest {
 		    assertTrue(lib.isElementDisplayed(videoObjects.FirstVideoResultPage)," Video search result not displayed");
 		     String videoLink=videoObjects.clickOnResultVideo();
 		     assertTrue(lib.isElementDisplayed(videoObjects.PlayVideo)," Play Video option not displayed");
-			   
-		    videoObjects.playVideo(videoLink);
-			   
-		              
-	    	
+		     lib.waitForElementIsDisplayed(videoObjects.pauseVideoIcon, 20);
+		     assertTrue(lib.isElementDisplayed(videoObjects.pauseVideoIcon)," Pause Video option not displayed");
+		     videoObjects.pauseVideoIcon.click();
+		     Thread.sleep(4000);
+		     assertTrue(lib.isElementDisplayed(videoObjects.playVideoIcon)," Play Video option not displayed");
+		     videoObjects.playVideoIcon.click();
+		     lib.waitForElementIsDisplayed(videoObjects.pauseVideoIcon, 20);
+		     assertTrue(lib.isElementDisplayed(videoObjects.VideoVolumeIcon)," Play Video option not displayed");
+		     assertTrue(lib.isElementDisplayed(videoObjects.pauseVideoIcon)," Pause Video option not displayed");
+			    	
 	    }
 	
 	    

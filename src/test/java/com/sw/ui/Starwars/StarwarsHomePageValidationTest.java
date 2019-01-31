@@ -2,12 +2,15 @@ package com.sw.ui.Starwars;
 
 import static org.testng.Assert.assertTrue;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class StarwarsHomePageValidationTest extends CommonTest{
+	
+	private static final Logger log = Logger.getLogger(StarwarsHomePageValidationTest.class);
 	
 	StarWarsHomePageObjects homeObjects;
 	StarwarsLibrary lib;
