@@ -114,7 +114,7 @@ public class StarwarsVideoPageTest extends CommonTest {
 	     *  Expected result: Result videos should be shown for all the browse links mentioned
 	     * @throws Exception
 	     */
-	    @Test(groups = { "FunctionalTest1"})
+	    @Test(groups = { "FunctionalTest"})
 	    public void verifyBrowseVideoOptionTest()  throws Exception{
 	    	
 	    	pageObjects=new StarwarsSignUpPage(driver);
