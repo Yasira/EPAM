@@ -7,11 +7,11 @@ Starwars functional testuite
  Install from Marketplace
  e.Run pom.xml as clean test
  f.All the tests are grouped to Functional so all of them will be running once triggered
- g. Can run by run as TestNG suite as well.
+ g. Can  run as TestNG suite as well.
  
  2.Logs will be generated and stored under /Logs Folder(Will create the Folder for first time)
  3.Screenshot will capture for failed testcases and it will be shown in /output/screenshot folder(Folder create for first time)
- 4.TestNG default Reporting is using , can be enhanced later.
+ 4.TestNG default Reporting is using for the report.
  
  Testcase details
  
