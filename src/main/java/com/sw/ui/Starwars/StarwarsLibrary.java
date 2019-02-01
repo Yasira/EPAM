@@ -62,6 +62,12 @@ public class StarwarsLibrary {
 			return false;
 		}
 	  
+	  /**
+	   * Switch to new window based on Page source
+	   * @param somePageSourceContent
+	   * @param driver
+	   * @throws Exception
+	   */
 	  public  void switchWindowBasedOnPageSource(String somePageSourceContent,WebDriver driver) throws Exception{
 			HashSet<String> availableWindows = (HashSet<String>) driver.getWindowHandles(); 
 			for(String window : availableWindows){
@@ -73,6 +79,13 @@ public class StarwarsLibrary {
 			}
 		}
 	 
+	  /**
+	   * Read data from properties file
+	   * @param file_name
+	   * @param key
+	   * @return
+	   * @throws IOException
+	   */
 	  public static String readPropertiesFile(String file_name, String key) throws IOException{
 			log.info("file name is "+file_name);
 			
