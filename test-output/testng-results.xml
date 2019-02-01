@@ -1,28 +1,1922 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="4" total="5" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="48" passed="48">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="19513" started-at="2019-01-30T06:13:54Z" finished-at="2019-01-30T06:14:14Z">
+  <suite name="Suite" duration-ms="1212501" started-at="2019-02-01T18:57:28Z" finished-at="2019-02-01T19:17:40Z">
     <groups>
-      <group name="FunctionalTest1">
-        <method signature="StarwarsHomePageValidationTest.validateSearchFieldTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2db7a79b]" name="validateSearchFieldTest" class="com.sw.ui.Starwars.StarwarsHomePageValidationTest"/>
-      </group> <!-- FunctionalTest1 -->
+      <group name="FunctionalTest">
+        <method signature="StarwarsFilmsPageTest.verifyClickOnFilmsImageTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="verifyClickOnFilmsImageTest" class="com.sw.ui.Starwars.StarwarsFilmsPageTest"/>
+        <method signature="StarwarsFilmsPageTest.verifyClickOnFilmsLinkTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="verifyClickOnFilmsLinkTest" class="com.sw.ui.Starwars.StarwarsFilmsPageTest"/>
+        <method signature="StarwarsFilmsPageTest.verifyFilmBuyOption([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="verifyFilmBuyOption" class="com.sw.ui.Starwars.StarwarsFilmsPageTest"/>
+        <method signature="StarwarsFilmsPageTest.verifyFilmsMenuOption()[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="verifyFilmsMenuOption" class="com.sw.ui.Starwars.StarwarsFilmsPageTest"/>
+        <method signature="StarwarsFilmsPageTest.verifyMovieBuyOption()[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="verifyMovieBuyOption" class="com.sw.ui.Starwars.StarwarsFilmsPageTest"/>
+        <method signature="StarwarsFilmsPageTest.verifySeeAllOptionsFilmTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="verifySeeAllOptionsFilmTest" class="com.sw.ui.Starwars.StarwarsFilmsPageTest"/>
+        <method signature="StarwarsHomePageValidationTest.validateHomePageMenuOptions()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="validateHomePageMenuOptions" class="com.sw.ui.Starwars.StarwarsHomePageValidationTest"/>
+        <method signature="StarwarsHomePageValidationTest.validateSearchFieldTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="validateSearchFieldTest" class="com.sw.ui.Starwars.StarwarsHomePageValidationTest"/>
+        <method signature="StarwarsHomePageValidationTest.validateSearchFieldTestWithInvalidWord()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="validateSearchFieldTestWithInvalidWord" class="com.sw.ui.Starwars.StarwarsHomePageValidationTest"/>
+        <method signature="StarwarsHomePageValidationTest.validateSearchTestWithAlphanumeric()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="validateSearchTestWithAlphanumeric" class="com.sw.ui.Starwars.StarwarsHomePageValidationTest"/>
+        <method signature="StarwarsHomePageValidationTest.validateSearchTestWithBlankField()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="validateSearchTestWithBlankField" class="com.sw.ui.Starwars.StarwarsHomePageValidationTest"/>
+        <method signature="StarwarsHomePageValidationTest.validateShowAndHideDisneyOption()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="validateShowAndHideDisneyOption" class="com.sw.ui.Starwars.StarwarsHomePageValidationTest"/>
+        <method signature="StarwarsHomePageValidationTest.verifyStarwarsHomepAgeSections([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="verifyStarwarsHomepAgeSections" class="com.sw.ui.Starwars.StarwarsHomePageValidationTest"/>
+        <method signature="StarwarsHomePageValidationTest.verifyStarwarsLegalRightsLinksTest([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="verifyStarwarsLegalRightsLinksTest" class="com.sw.ui.Starwars.StarwarsHomePageValidationTest"/>
+        <method signature="StarwarsHomePageValidationTest.verifyStarwarsSocialPage([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="verifyStarwarsSocialPage" class="com.sw.ui.Starwars.StarwarsHomePageValidationTest"/>
+        <method signature="StarwarsLoginTest.starwarsLogInCanelOptionTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="starwarsLogInCanelOptionTest" class="com.sw.ui.Starwars.StarwarsLoginTest"/>
+        <method signature="StarwarsLoginTest.starwarsLogOutOptionTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="starwarsLogOutOptionTest" class="com.sw.ui.Starwars.StarwarsLoginTest"/>
+        <method signature="StarwarsLoginTest.starwarsLoginWithInavlidDataTest([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="starwarsLoginWithInavlidDataTest" class="com.sw.ui.Starwars.StarwarsLoginTest"/>
+        <method signature="StarwarsLoginTest.starwarsSignInTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="starwarsSignInTest" class="com.sw.ui.Starwars.StarwarsLoginTest"/>
+        <method signature="StarwarsLoginTest.starwarsSignUpPageValidationTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="starwarsSignUpPageValidationTest" class="com.sw.ui.Starwars.StarwarsLoginTest"/>
+        <method signature="StarwarsVideoPageTest.validatePlayingVideoTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsVideoPageTest@706a04ae]" name="validatePlayingVideoTest" class="com.sw.ui.Starwars.StarwarsVideoPageTest"/>
+        <method signature="StarwarsVideoPageTest.verifyBrowseVideoOptionTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsVideoPageTest@706a04ae]" name="verifyBrowseVideoOptionTest" class="com.sw.ui.Starwars.StarwarsVideoPageTest"/>
+        <method signature="StarwarsVideoPageTest.verifyVideoMenuOptionTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsVideoPageTest@706a04ae]" name="verifyVideoMenuOptionTest" class="com.sw.ui.Starwars.StarwarsVideoPageTest"/>
+        <method signature="StarwarsVideoPageTest.verifyVideoSearchOptionTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsVideoPageTest@706a04ae]" name="verifyVideoSearchOptionTest" class="com.sw.ui.Starwars.StarwarsVideoPageTest"/>
+        <method signature="StarwarsVideoPageTest.verifyVideoSearchOptionWithInvalidDataTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsVideoPageTest@706a04ae]" name="verifyVideoSearchOptionWithInvalidDataTest" class="com.sw.ui.Starwars.StarwarsVideoPageTest"/>
+      </group> <!-- FunctionalTest -->
     </groups>
-    <test name="test" duration-ms="19513" started-at="2019-01-30T06:13:54Z" finished-at="2019-01-30T06:14:14Z">
-      <class name="com.sw.ui.Starwars.StarwarsHomePageValidationTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2db7a79b]" name="setUp" is-config="true" duration-ms="10729" started-at="2019-01-30T06:13:54Z" finished-at="2019-01-30T06:14:05Z">
+    <test name="test" duration-ms="1212501" started-at="2019-02-01T18:57:28Z" finished-at="2019-02-01T19:17:40Z">
+      <class name="com.sw.ui.Starwars.StarwarsLoginTest">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="setUp" is-config="true" duration-ms="11761" started-at="2019-02-01T19:10:45Z" finished-at="2019-02-01T19:10:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsLoginTest.starwarsLogInCanelOptionTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateSearchFieldTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2db7a79b]" name="validateSearchFieldTest" duration-ms="7173" started-at="2019-01-30T06:14:05Z" finished-at="2019-01-30T06:14:12Z">
+        <test-method status="PASS" signature="starwarsLogInCanelOptionTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="starwarsLogInCanelOptionTest" duration-ms="29028" started-at="2019-02-01T19:10:57Z" finished-at="2019-02-01T19:11:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- starwarsLogInCanelOptionTest -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="takeScreenShot" is-config="true" duration-ms="1" started-at="2019-02-01T19:11:26Z" finished-at="2019-02-01T19:11:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsLoginTest.starwarsLogInCanelOptionTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=starwarsLogInCanelOptionTest status=SUCCESS method=StarwarsLoginTest.starwarsLogInCanelOptionTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="tearDown" is-config="true" duration-ms="1177" started-at="2019-02-01T19:11:26Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:11:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="setUp" is-config="true" duration-ms="6921" started-at="2019-02-01T19:11:27Z" finished-at="2019-02-01T19:11:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsLoginTest.starwarsLogOutOptionTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="starwarsLogOutOptionTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="starwarsLogOutOptionTest" duration-ms="29095" started-at="2019-02-01T19:11:34Z" finished-at="2019-02-01T19:12:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- starwarsLogOutOptionTest -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:12:03Z" finished-at="2019-02-01T19:12:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsLoginTest.starwarsLogOutOptionTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=starwarsLogOutOptionTest status=SUCCESS method=StarwarsLoginTest.starwarsLogOutOptionTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="tearDown" is-config="true" duration-ms="1183" started-at="2019-02-01T19:12:03Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:12:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="setUp" is-config="true" duration-ms="12362" started-at="2019-02-01T19:12:04Z" finished-at="2019-02-01T19:12:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsLoginTest.starwarsLoginWithInavlidDataTest(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="starwarsLoginWithInavlidDataTest([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="starwarsLoginWithInavlidDataTest" duration-ms="3515" started-at="2019-02-01T19:12:17Z" data-provider="InvalidLoginDetails" finished-at="2019-02-01T19:12:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@3406472c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- starwarsLoginWithInavlidDataTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="tearDown" is-config="true" duration-ms="1299" started-at="2019-02-01T19:12:20Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:12:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:12:20Z" finished-at="2019-02-01T19:12:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsLoginTest.starwarsLoginWithInavlidDataTest(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=starwarsLoginWithInavlidDataTest status=SUCCESS method=StarwarsLoginTest.starwarsLoginWithInavlidDataTest([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="setUp" is-config="true" duration-ms="19951" started-at="2019-02-01T19:12:21Z" finished-at="2019-02-01T19:12:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsLoginTest.starwarsLoginWithInavlidDataTest(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="starwarsLoginWithInavlidDataTest([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="starwarsLoginWithInavlidDataTest" duration-ms="3461" started-at="2019-02-01T19:12:41Z" data-provider="InvalidLoginDetails" finished-at="2019-02-01T19:12:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@5717c37]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- starwarsLoginWithInavlidDataTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="tearDown" is-config="true" duration-ms="1160" started-at="2019-02-01T19:12:45Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:12:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:12:45Z" finished-at="2019-02-01T19:12:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsLoginTest.starwarsLoginWithInavlidDataTest(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=starwarsLoginWithInavlidDataTest status=SUCCESS method=StarwarsLoginTest.starwarsLoginWithInavlidDataTest([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="setUp" is-config="true" duration-ms="14375" started-at="2019-02-01T19:12:46Z" finished-at="2019-02-01T19:13:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsLoginTest.starwarsLoginWithInavlidDataTest(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="starwarsLoginWithInavlidDataTest([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="starwarsLoginWithInavlidDataTest" duration-ms="3677" started-at="2019-02-01T19:13:00Z" data-provider="InvalidLoginDetails" finished-at="2019-02-01T19:13:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@68f4865]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- starwarsLoginWithInavlidDataTest -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:13:04Z" finished-at="2019-02-01T19:13:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsLoginTest.starwarsLoginWithInavlidDataTest(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=starwarsLoginWithInavlidDataTest status=SUCCESS method=StarwarsLoginTest.starwarsLoginWithInavlidDataTest([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="tearDown" is-config="true" duration-ms="1173" started-at="2019-02-01T19:13:04Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:13:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="setUp" is-config="true" duration-ms="14681" started-at="2019-02-01T19:13:05Z" finished-at="2019-02-01T19:13:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsLoginTest.starwarsLoginWithInavlidDataTest(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="starwarsLoginWithInavlidDataTest([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="starwarsLoginWithInavlidDataTest" duration-ms="3241" started-at="2019-02-01T19:13:20Z" data-provider="InvalidLoginDetails" finished-at="2019-02-01T19:13:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@4816278d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- starwarsLoginWithInavlidDataTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="tearDown" is-config="true" duration-ms="1131" started-at="2019-02-01T19:13:23Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:13:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:13:23Z" finished-at="2019-02-01T19:13:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsLoginTest.starwarsLoginWithInavlidDataTest(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=starwarsLoginWithInavlidDataTest status=SUCCESS method=StarwarsLoginTest.starwarsLoginWithInavlidDataTest([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="setUp" is-config="true" duration-ms="18567" started-at="2019-02-01T19:13:24Z" finished-at="2019-02-01T19:13:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsLoginTest.starwarsLoginWithInavlidDataTest(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="starwarsLoginWithInavlidDataTest([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="starwarsLoginWithInavlidDataTest" duration-ms="3680" started-at="2019-02-01T19:13:43Z" data-provider="InvalidLoginDetails" finished-at="2019-02-01T19:13:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@4eaf3684]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- starwarsLoginWithInavlidDataTest -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:13:47Z" finished-at="2019-02-01T19:13:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsLoginTest.starwarsLoginWithInavlidDataTest(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=starwarsLoginWithInavlidDataTest status=SUCCESS method=StarwarsLoginTest.starwarsLoginWithInavlidDataTest([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="tearDown" is-config="true" duration-ms="1744" started-at="2019-02-01T19:13:47Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:13:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="setUp" is-config="true" duration-ms="24252" started-at="2019-02-01T19:13:48Z" finished-at="2019-02-01T19:14:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsLoginTest.starwarsLoginWithInavlidDataTest(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="starwarsLoginWithInavlidDataTest([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="starwarsLoginWithInavlidDataTest" duration-ms="4704" started-at="2019-02-01T19:14:13Z" data-provider="InvalidLoginDetails" finished-at="2019-02-01T19:14:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@40317ba2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- starwarsLoginWithInavlidDataTest -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="takeScreenShot" is-config="true" duration-ms="1" started-at="2019-02-01T19:14:17Z" finished-at="2019-02-01T19:14:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsLoginTest.starwarsLoginWithInavlidDataTest(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=starwarsLoginWithInavlidDataTest status=SUCCESS method=StarwarsLoginTest.starwarsLoginWithInavlidDataTest([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="tearDown" is-config="true" duration-ms="1568" started-at="2019-02-01T19:14:17Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:14:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="setUp" is-config="true" duration-ms="18678" started-at="2019-02-01T19:14:19Z" finished-at="2019-02-01T19:14:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsLoginTest.starwarsSignInTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="starwarsSignInTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="starwarsSignInTest" duration-ms="28773" started-at="2019-02-01T19:14:37Z" finished-at="2019-02-01T19:15:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- starwarsSignInTest -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:15:06Z" finished-at="2019-02-01T19:15:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsLoginTest.starwarsSignInTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=starwarsSignInTest status=SUCCESS method=StarwarsLoginTest.starwarsSignInTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="tearDown" is-config="true" duration-ms="1343" started-at="2019-02-01T19:15:06Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:15:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="setUp" is-config="true" duration-ms="7431" started-at="2019-02-01T19:15:08Z" finished-at="2019-02-01T19:15:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsLoginTest.starwarsSignUpPageValidationTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="starwarsSignUpPageValidationTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="starwarsSignUpPageValidationTest" duration-ms="999" started-at="2019-02-01T19:15:15Z" finished-at="2019-02-01T19:15:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- starwarsSignUpPageValidationTest -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:15:16Z" finished-at="2019-02-01T19:15:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsLoginTest.starwarsSignUpPageValidationTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=starwarsSignUpPageValidationTest status=SUCCESS method=StarwarsLoginTest.starwarsSignUpPageValidationTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsLoginTest@3578436e]" name="tearDown" is-config="true" duration-ms="1160" started-at="2019-02-01T19:15:16Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:15:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.sw.ui.Starwars.StarwarsLoginTest -->
+      <class name="com.sw.ui.Starwars.StarwarsVideoPageTest">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsVideoPageTest@706a04ae]" name="setUp" is-config="true" duration-ms="16622" started-at="2019-02-01T19:15:17Z" finished-at="2019-02-01T19:15:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsVideoPageTest.validatePlayingVideoTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validatePlayingVideoTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsVideoPageTest@706a04ae]" name="validatePlayingVideoTest" duration-ms="16325" started-at="2019-02-01T19:15:34Z" finished-at="2019-02-01T19:15:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePlayingVideoTest -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsVideoPageTest@706a04ae]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:15:50Z" finished-at="2019-02-01T19:15:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsVideoPageTest.validatePlayingVideoTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=validatePlayingVideoTest status=SUCCESS method=StarwarsVideoPageTest.validatePlayingVideoTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsVideoPageTest@706a04ae] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsVideoPageTest@706a04ae]" name="tearDown" is-config="true" duration-ms="2727" started-at="2019-02-01T19:15:50Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:15:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsVideoPageTest@706a04ae]" name="setUp" is-config="true" duration-ms="6938" started-at="2019-02-01T19:15:53Z" finished-at="2019-02-01T19:16:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsVideoPageTest.verifyBrowseVideoOptionTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyBrowseVideoOptionTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsVideoPageTest@706a04ae]" name="verifyBrowseVideoOptionTest" duration-ms="44889" started-at="2019-02-01T19:16:00Z" finished-at="2019-02-01T19:16:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBrowseVideoOptionTest -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsVideoPageTest@706a04ae]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:16:45Z" finished-at="2019-02-01T19:16:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsVideoPageTest.verifyBrowseVideoOptionTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyBrowseVideoOptionTest status=SUCCESS method=StarwarsVideoPageTest.verifyBrowseVideoOptionTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsVideoPageTest@706a04ae] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsVideoPageTest@706a04ae]" name="tearDown" is-config="true" duration-ms="1381" started-at="2019-02-01T19:16:45Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:16:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsVideoPageTest@706a04ae]" name="setUp" is-config="true" duration-ms="16310" started-at="2019-02-01T19:16:46Z" finished-at="2019-02-01T19:17:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsVideoPageTest.verifyVideoMenuOptionTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyVideoMenuOptionTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsVideoPageTest@706a04ae]" name="verifyVideoMenuOptionTest" duration-ms="2196" started-at="2019-02-01T19:17:02Z" finished-at="2019-02-01T19:17:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyVideoMenuOptionTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsVideoPageTest@706a04ae]" name="tearDown" is-config="true" duration-ms="1228" started-at="2019-02-01T19:17:05Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:17:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsVideoPageTest@706a04ae]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:17:05Z" finished-at="2019-02-01T19:17:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsVideoPageTest.verifyVideoMenuOptionTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyVideoMenuOptionTest status=SUCCESS method=StarwarsVideoPageTest.verifyVideoMenuOptionTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsVideoPageTest@706a04ae] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsVideoPageTest@706a04ae]" name="setUp" is-config="true" duration-ms="7094" started-at="2019-02-01T19:17:06Z" finished-at="2019-02-01T19:17:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsVideoPageTest.verifyVideoSearchOptionTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyVideoSearchOptionTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsVideoPageTest@706a04ae]" name="verifyVideoSearchOptionTest" duration-ms="4276" started-at="2019-02-01T19:17:13Z" finished-at="2019-02-01T19:17:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyVideoSearchOptionTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsVideoPageTest@706a04ae]" name="tearDown" is-config="true" duration-ms="1540" started-at="2019-02-01T19:17:17Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsVideoPageTest@706a04ae]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:17:17Z" finished-at="2019-02-01T19:17:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsVideoPageTest.verifyVideoSearchOptionTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyVideoSearchOptionTest status=SUCCESS method=StarwarsVideoPageTest.verifyVideoSearchOptionTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsVideoPageTest@706a04ae] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsVideoPageTest@706a04ae]" name="setUp" is-config="true" duration-ms="16397" started-at="2019-02-01T19:17:19Z" finished-at="2019-02-01T19:17:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsVideoPageTest.verifyVideoSearchOptionWithInvalidDataTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyVideoSearchOptionWithInvalidDataTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsVideoPageTest@706a04ae]" name="verifyVideoSearchOptionWithInvalidDataTest" duration-ms="3712" started-at="2019-02-01T19:17:35Z" finished-at="2019-02-01T19:17:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyVideoSearchOptionWithInvalidDataTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsVideoPageTest@706a04ae]" name="tearDown" is-config="true" duration-ms="1196" started-at="2019-02-01T19:17:39Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:17:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsVideoPageTest@706a04ae]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:17:39Z" finished-at="2019-02-01T19:17:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsVideoPageTest.verifyVideoSearchOptionWithInvalidDataTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyVideoSearchOptionWithInvalidDataTest status=SUCCESS method=StarwarsVideoPageTest.verifyVideoSearchOptionWithInvalidDataTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsVideoPageTest@706a04ae] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+      </class> <!-- com.sw.ui.Starwars.StarwarsVideoPageTest -->
+      <class name="com.sw.ui.Starwars.StarwarsHomePageValidationTest">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="setUp" is-config="true" duration-ms="14507" started-at="2019-02-01T19:00:52Z" finished-at="2019-02-01T19:01:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.validateHomePageMenuOptions() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateHomePageMenuOptions()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="validateHomePageMenuOptions" duration-ms="554" started-at="2019-02-01T19:01:06Z" finished-at="2019-02-01T19:01:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHomePageMenuOptions -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:01:07Z" finished-at="2019-02-01T19:01:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.validateHomePageMenuOptions() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=validateHomePageMenuOptions status=SUCCESS method=StarwarsHomePageValidationTest.validateHomePageMenuOptions()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="tearDown" is-config="true" duration-ms="1168" started-at="2019-02-01T19:01:07Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:01:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="setUp" is-config="true" duration-ms="7710" started-at="2019-02-01T19:01:08Z" finished-at="2019-02-01T19:01:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.validateSearchFieldTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateSearchFieldTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="validateSearchFieldTest" duration-ms="8055" started-at="2019-02-01T19:01:16Z" finished-at="2019-02-01T19:01:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateSearchFieldTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2db7a79b]" name="tearDown" is-config="true" duration-ms="1564" started-at="2019-01-30T06:14:12Z" finished-at="2019-01-30T06:14:14Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="tearDown" is-config="true" duration-ms="1317" started-at="2019-02-01T19:01:24Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:01:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:01:24Z" finished-at="2019-02-01T19:01:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.validateSearchFieldTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=validateSearchFieldTest status=SUCCESS method=StarwarsHomePageValidationTest.validateSearchFieldTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="setUp" is-config="true" duration-ms="19467" started-at="2019-02-01T19:01:25Z" finished-at="2019-02-01T19:01:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.validateSearchFieldTestWithInvalidWord() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateSearchFieldTestWithInvalidWord()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="validateSearchFieldTestWithInvalidWord" duration-ms="10547" started-at="2019-02-01T19:01:45Z" finished-at="2019-02-01T19:01:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSearchFieldTestWithInvalidWord -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="tearDown" is-config="true" duration-ms="1350" started-at="2019-02-01T19:01:55Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:01:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:01:55Z" finished-at="2019-02-01T19:01:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.validateSearchFieldTestWithInvalidWord() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=validateSearchFieldTestWithInvalidWord status=SUCCESS method=StarwarsHomePageValidationTest.validateSearchFieldTestWithInvalidWord()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="setUp" is-config="true" duration-ms="13472" started-at="2019-02-01T19:01:57Z" finished-at="2019-02-01T19:02:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.validateSearchTestWithAlphanumeric() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateSearchTestWithAlphanumeric()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="validateSearchTestWithAlphanumeric" duration-ms="6942" started-at="2019-02-01T19:02:10Z" finished-at="2019-02-01T19:02:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSearchTestWithAlphanumeric -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="tearDown" is-config="true" duration-ms="1233" started-at="2019-02-01T19:02:17Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:02:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:02:17Z" finished-at="2019-02-01T19:02:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.validateSearchTestWithAlphanumeric() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=validateSearchTestWithAlphanumeric status=SUCCESS method=StarwarsHomePageValidationTest.validateSearchTestWithAlphanumeric()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="setUp" is-config="true" duration-ms="14116" started-at="2019-02-01T19:02:18Z" finished-at="2019-02-01T19:02:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.validateSearchTestWithBlankField() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateSearchTestWithBlankField()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="validateSearchTestWithBlankField" duration-ms="9822" started-at="2019-02-01T19:02:32Z" finished-at="2019-02-01T19:02:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSearchTestWithBlankField -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="tearDown" is-config="true" duration-ms="1329" started-at="2019-02-01T19:02:42Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:02:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:02:42Z" finished-at="2019-02-01T19:02:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.validateSearchTestWithBlankField() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=validateSearchTestWithBlankField status=SUCCESS method=StarwarsHomePageValidationTest.validateSearchTestWithBlankField()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="setUp" is-config="true" duration-ms="18021" started-at="2019-02-01T19:02:43Z" finished-at="2019-02-01T19:03:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.validateShowAndHideDisneyOption() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateShowAndHideDisneyOption()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="validateShowAndHideDisneyOption" duration-ms="789" started-at="2019-02-01T19:03:01Z" finished-at="2019-02-01T19:03:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateShowAndHideDisneyOption -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:03:02Z" finished-at="2019-02-01T19:03:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.validateShowAndHideDisneyOption() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=validateShowAndHideDisneyOption status=SUCCESS method=StarwarsHomePageValidationTest.validateShowAndHideDisneyOption()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="tearDown" is-config="true" duration-ms="1382" started-at="2019-02-01T19:03:02Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:03:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="setUp" is-config="true" duration-ms="16681" started-at="2019-02-01T19:03:04Z" finished-at="2019-02-01T19:03:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsHomepAgeSections(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyStarwarsHomepAgeSections([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="verifyStarwarsHomepAgeSections" duration-ms="292" started-at="2019-02-01T19:03:20Z" data-provider="HomePageSections" finished-at="2019-02-01T19:03:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@727eb8cb]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStarwarsHomepAgeSections -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:03:21Z" finished-at="2019-02-01T19:03:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsHomepAgeSections(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyStarwarsHomepAgeSections status=SUCCESS method=StarwarsHomePageValidationTest.verifyStarwarsHomepAgeSections([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="tearDown" is-config="true" duration-ms="1588" started-at="2019-02-01T19:03:21Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:03:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="setUp" is-config="true" duration-ms="23278" started-at="2019-02-01T19:03:22Z" finished-at="2019-02-01T19:03:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsHomepAgeSections(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyStarwarsHomepAgeSections([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="verifyStarwarsHomepAgeSections" duration-ms="276" started-at="2019-02-01T19:03:45Z" data-provider="HomePageSections" finished-at="2019-02-01T19:03:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@39d9314d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStarwarsHomepAgeSections -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="takeScreenShot" is-config="true" duration-ms="1" started-at="2019-02-01T19:03:46Z" finished-at="2019-02-01T19:03:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsHomepAgeSections(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyStarwarsHomepAgeSections status=SUCCESS method=StarwarsHomePageValidationTest.verifyStarwarsHomepAgeSections([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="tearDown" is-config="true" duration-ms="1471" started-at="2019-02-01T19:03:46Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:03:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="setUp" is-config="true" duration-ms="15553" started-at="2019-02-01T19:03:47Z" finished-at="2019-02-01T19:04:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsHomepAgeSections(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyStarwarsHomepAgeSections([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="verifyStarwarsHomepAgeSections" duration-ms="251" started-at="2019-02-01T19:04:03Z" data-provider="HomePageSections" finished-at="2019-02-01T19:04:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@b978d10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStarwarsHomepAgeSections -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="takeScreenShot" is-config="true" duration-ms="1" started-at="2019-02-01T19:04:03Z" finished-at="2019-02-01T19:04:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsHomepAgeSections(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyStarwarsHomepAgeSections status=SUCCESS method=StarwarsHomePageValidationTest.verifyStarwarsHomepAgeSections([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="tearDown" is-config="true" duration-ms="1213" started-at="2019-02-01T19:04:03Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:04:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="setUp" is-config="true" duration-ms="8008" started-at="2019-02-01T19:04:04Z" finished-at="2019-02-01T19:04:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsHomepAgeSections(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyStarwarsHomepAgeSections([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="verifyStarwarsHomepAgeSections" duration-ms="252" started-at="2019-02-01T19:04:12Z" data-provider="HomePageSections" finished-at="2019-02-01T19:04:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@5b7a8434]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStarwarsHomepAgeSections -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:04:12Z" finished-at="2019-02-01T19:04:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsHomepAgeSections(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyStarwarsHomepAgeSections status=SUCCESS method=StarwarsHomePageValidationTest.verifyStarwarsHomepAgeSections([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="tearDown" is-config="true" duration-ms="1299" started-at="2019-02-01T19:04:12Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:04:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="setUp" is-config="true" duration-ms="22541" started-at="2019-02-01T19:04:14Z" finished-at="2019-02-01T19:04:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsHomepAgeSections(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyStarwarsHomepAgeSections([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="verifyStarwarsHomepAgeSections" duration-ms="258" started-at="2019-02-01T19:04:36Z" data-provider="HomePageSections" finished-at="2019-02-01T19:04:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@5c45d770]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStarwarsHomepAgeSections -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:04:37Z" finished-at="2019-02-01T19:04:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsHomepAgeSections(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyStarwarsHomepAgeSections status=SUCCESS method=StarwarsHomePageValidationTest.verifyStarwarsHomepAgeSections([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="tearDown" is-config="true" duration-ms="1837" started-at="2019-02-01T19:04:37Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:04:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="setUp" is-config="true" duration-ms="20308" started-at="2019-02-01T19:04:38Z" finished-at="2019-02-01T19:04:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsHomepAgeSections(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyStarwarsHomepAgeSections([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="verifyStarwarsHomepAgeSections" duration-ms="243" started-at="2019-02-01T19:04:59Z" data-provider="HomePageSections" finished-at="2019-02-01T19:04:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@2ce6c6ec]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStarwarsHomepAgeSections -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="tearDown" is-config="true" duration-ms="1395" started-at="2019-02-01T19:04:59Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:05:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:04:59Z" finished-at="2019-02-01T19:04:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsHomepAgeSections(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyStarwarsHomepAgeSections status=SUCCESS method=StarwarsHomePageValidationTest.verifyStarwarsHomepAgeSections([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="setUp" is-config="true" duration-ms="21003" started-at="2019-02-01T19:05:00Z" finished-at="2019-02-01T19:05:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsLegalRightsLinksTest(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyStarwarsLegalRightsLinksTest([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="verifyStarwarsLegalRightsLinksTest" duration-ms="13703" started-at="2019-02-01T19:05:21Z" data-provider="LegalRights" finished-at="2019-02-01T19:05:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@1bae316d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStarwarsLegalRightsLinksTest -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:05:35Z" finished-at="2019-02-01T19:05:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsLegalRightsLinksTest(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyStarwarsLegalRightsLinksTest status=SUCCESS method=StarwarsHomePageValidationTest.verifyStarwarsLegalRightsLinksTest([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="tearDown" is-config="true" duration-ms="1796" started-at="2019-02-01T19:05:35Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:05:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="setUp" is-config="true" duration-ms="21474" started-at="2019-02-01T19:05:37Z" finished-at="2019-02-01T19:05:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsLegalRightsLinksTest(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyStarwarsLegalRightsLinksTest([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="verifyStarwarsLegalRightsLinksTest" duration-ms="7605" started-at="2019-02-01T19:05:58Z" data-provider="LegalRights" finished-at="2019-02-01T19:06:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@147a5d08]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStarwarsLegalRightsLinksTest -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="takeScreenShot" is-config="true" duration-ms="1" started-at="2019-02-01T19:06:06Z" finished-at="2019-02-01T19:06:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsLegalRightsLinksTest(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyStarwarsLegalRightsLinksTest status=SUCCESS method=StarwarsHomePageValidationTest.verifyStarwarsLegalRightsLinksTest([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="tearDown" is-config="true" duration-ms="1175" started-at="2019-02-01T19:06:06Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:06:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="setUp" is-config="true" duration-ms="8075" started-at="2019-02-01T19:06:07Z" finished-at="2019-02-01T19:06:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsLegalRightsLinksTest(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyStarwarsLegalRightsLinksTest([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="verifyStarwarsLegalRightsLinksTest" duration-ms="7795" started-at="2019-02-01T19:06:15Z" data-provider="LegalRights" finished-at="2019-02-01T19:06:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@6676f6a0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStarwarsLegalRightsLinksTest -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:06:23Z" finished-at="2019-02-01T19:06:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsLegalRightsLinksTest(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyStarwarsLegalRightsLinksTest status=SUCCESS method=StarwarsHomePageValidationTest.verifyStarwarsLegalRightsLinksTest([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="tearDown" is-config="true" duration-ms="1279" started-at="2019-02-01T19:06:23Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:06:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="setUp" is-config="true" duration-ms="27369" started-at="2019-02-01T19:06:24Z" finished-at="2019-02-01T19:06:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsLegalRightsLinksTest(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyStarwarsLegalRightsLinksTest([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="verifyStarwarsLegalRightsLinksTest" duration-ms="8062" started-at="2019-02-01T19:06:52Z" data-provider="LegalRights" finished-at="2019-02-01T19:07:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@7cbd9d24]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStarwarsLegalRightsLinksTest -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:07:00Z" finished-at="2019-02-01T19:07:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsLegalRightsLinksTest(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyStarwarsLegalRightsLinksTest status=SUCCESS method=StarwarsHomePageValidationTest.verifyStarwarsLegalRightsLinksTest([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="tearDown" is-config="true" duration-ms="1228" started-at="2019-02-01T19:07:00Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:07:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="setUp" is-config="true" duration-ms="15387" started-at="2019-02-01T19:07:01Z" finished-at="2019-02-01T19:07:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsLegalRightsLinksTest(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyStarwarsLegalRightsLinksTest([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="verifyStarwarsLegalRightsLinksTest" duration-ms="7658" started-at="2019-02-01T19:07:16Z" data-provider="LegalRights" finished-at="2019-02-01T19:07:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@1672fe87]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStarwarsLegalRightsLinksTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="tearDown" is-config="true" duration-ms="1367" started-at="2019-02-01T19:07:24Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:07:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:07:24Z" finished-at="2019-02-01T19:07:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsLegalRightsLinksTest(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyStarwarsLegalRightsLinksTest status=SUCCESS method=StarwarsHomePageValidationTest.verifyStarwarsLegalRightsLinksTest([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="setUp" is-config="true" duration-ms="17637" started-at="2019-02-01T19:07:25Z" finished-at="2019-02-01T19:07:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsLegalRightsLinksTest(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyStarwarsLegalRightsLinksTest([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="verifyStarwarsLegalRightsLinksTest" duration-ms="12411" started-at="2019-02-01T19:07:43Z" data-provider="LegalRights" finished-at="2019-02-01T19:07:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@5026735c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStarwarsLegalRightsLinksTest -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:07:55Z" finished-at="2019-02-01T19:07:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsLegalRightsLinksTest(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyStarwarsLegalRightsLinksTest status=SUCCESS method=StarwarsHomePageValidationTest.verifyStarwarsLegalRightsLinksTest([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="tearDown" is-config="true" duration-ms="2068" started-at="2019-02-01T19:07:55Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:07:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="setUp" is-config="true" duration-ms="9058" started-at="2019-02-01T19:07:57Z" finished-at="2019-02-01T19:08:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsLegalRightsLinksTest(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyStarwarsLegalRightsLinksTest([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="verifyStarwarsLegalRightsLinksTest" duration-ms="7607" started-at="2019-02-01T19:08:07Z" data-provider="LegalRights" finished-at="2019-02-01T19:08:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@1b45c0e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStarwarsLegalRightsLinksTest -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="takeScreenShot" is-config="true" duration-ms="1" started-at="2019-02-01T19:08:14Z" finished-at="2019-02-01T19:08:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsLegalRightsLinksTest(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyStarwarsLegalRightsLinksTest status=SUCCESS method=StarwarsHomePageValidationTest.verifyStarwarsLegalRightsLinksTest([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="tearDown" is-config="true" duration-ms="1370" started-at="2019-02-01T19:08:14Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:08:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="setUp" is-config="true" duration-ms="19824" started-at="2019-02-01T19:08:16Z" finished-at="2019-02-01T19:08:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsLegalRightsLinksTest(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyStarwarsLegalRightsLinksTest([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="verifyStarwarsLegalRightsLinksTest" duration-ms="8163" started-at="2019-02-01T19:08:35Z" data-provider="LegalRights" finished-at="2019-02-01T19:08:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@11f0a5a1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStarwarsLegalRightsLinksTest -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="takeScreenShot" is-config="true" duration-ms="1" started-at="2019-02-01T19:08:43Z" finished-at="2019-02-01T19:08:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsLegalRightsLinksTest(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyStarwarsLegalRightsLinksTest status=SUCCESS method=StarwarsHomePageValidationTest.verifyStarwarsLegalRightsLinksTest([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="tearDown" is-config="true" duration-ms="1699" started-at="2019-02-01T19:08:44Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:08:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="setUp" is-config="true" duration-ms="20499" started-at="2019-02-01T19:08:45Z" finished-at="2019-02-01T19:09:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsSocialPage(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyStarwarsSocialPage([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="verifyStarwarsSocialPage" duration-ms="7796" started-at="2019-02-01T19:09:06Z" data-provider="SocialPage" finished-at="2019-02-01T19:09:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@10f7f7de]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStarwarsSocialPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="tearDown" is-config="true" duration-ms="1167" started-at="2019-02-01T19:09:13Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:09:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:09:13Z" finished-at="2019-02-01T19:09:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsSocialPage(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyStarwarsSocialPage status=SUCCESS method=StarwarsHomePageValidationTest.verifyStarwarsSocialPage([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="setUp" is-config="true" duration-ms="6712" started-at="2019-02-01T19:09:15Z" finished-at="2019-02-01T19:09:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsSocialPage(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyStarwarsSocialPage([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="verifyStarwarsSocialPage" duration-ms="10218" started-at="2019-02-01T19:09:21Z" data-provider="SocialPage" finished-at="2019-02-01T19:09:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@73a8da0f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStarwarsSocialPage -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="takeScreenShot" is-config="true" duration-ms="1" started-at="2019-02-01T19:09:32Z" finished-at="2019-02-01T19:09:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsSocialPage(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyStarwarsSocialPage status=SUCCESS method=StarwarsHomePageValidationTest.verifyStarwarsSocialPage([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="tearDown" is-config="true" duration-ms="1203" started-at="2019-02-01T19:09:32Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:09:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="setUp" is-config="true" duration-ms="7272" started-at="2019-02-01T19:09:33Z" finished-at="2019-02-01T19:09:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsSocialPage(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyStarwarsSocialPage([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="verifyStarwarsSocialPage" duration-ms="7665" started-at="2019-02-01T19:09:40Z" data-provider="SocialPage" finished-at="2019-02-01T19:09:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@50dfbc58]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStarwarsSocialPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="tearDown" is-config="true" duration-ms="1227" started-at="2019-02-01T19:09:48Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:09:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:09:48Z" finished-at="2019-02-01T19:09:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsSocialPage(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyStarwarsSocialPage status=SUCCESS method=StarwarsHomePageValidationTest.verifyStarwarsSocialPage([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="setUp" is-config="true" duration-ms="6807" started-at="2019-02-01T19:09:49Z" finished-at="2019-02-01T19:09:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsSocialPage(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyStarwarsSocialPage([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="verifyStarwarsSocialPage" duration-ms="7786" started-at="2019-02-01T19:09:56Z" data-provider="SocialPage" finished-at="2019-02-01T19:10:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@4416d64f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStarwarsSocialPage -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="takeScreenShot" is-config="true" duration-ms="1" started-at="2019-02-01T19:10:04Z" finished-at="2019-02-01T19:10:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsSocialPage(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyStarwarsSocialPage status=SUCCESS method=StarwarsHomePageValidationTest.verifyStarwarsSocialPage([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="tearDown" is-config="true" duration-ms="1197" started-at="2019-02-01T19:10:04Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:10:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="setUp" is-config="true" duration-ms="15233" started-at="2019-02-01T19:10:05Z" finished-at="2019-02-01T19:10:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsSocialPage(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyStarwarsSocialPage([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="verifyStarwarsSocialPage" duration-ms="7956" started-at="2019-02-01T19:10:20Z" data-provider="SocialPage" finished-at="2019-02-01T19:10:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@6bf08014]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStarwarsSocialPage -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:10:28Z" finished-at="2019-02-01T19:10:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsSocialPage(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyStarwarsSocialPage status=SUCCESS method=StarwarsHomePageValidationTest.verifyStarwarsSocialPage([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="tearDown" is-config="true" duration-ms="1202" started-at="2019-02-01T19:10:28Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:10:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="setUp" is-config="true" duration-ms="6737" started-at="2019-02-01T19:10:29Z" finished-at="2019-02-01T19:10:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsSocialPage(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyStarwarsSocialPage([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="verifyStarwarsSocialPage" duration-ms="7867" started-at="2019-02-01T19:10:36Z" data-provider="SocialPage" finished-at="2019-02-01T19:10:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@5e3d57c7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStarwarsSocialPage -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:10:44Z" finished-at="2019-02-01T19:10:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsHomePageValidationTest.verifyStarwarsSocialPage(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyStarwarsSocialPage status=SUCCESS method=StarwarsHomePageValidationTest.verifyStarwarsSocialPage([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsHomePageValidationTest@2eda0940]" name="tearDown" is-config="true" duration-ms="1357" started-at="2019-02-01T19:10:44Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:10:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.sw.ui.Starwars.StarwarsHomePageValidationTest -->
+      <class name="com.sw.ui.Starwars.StarwarsFilmsPageTest">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="setUp" is-config="true" duration-ms="13087" started-at="2019-02-01T18:57:28Z" finished-at="2019-02-01T18:57:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsFilmsPageTest.verifyClickOnFilmsImageTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyClickOnFilmsImageTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="verifyClickOnFilmsImageTest" duration-ms="16552" started-at="2019-02-01T18:57:41Z" finished-at="2019-02-01T18:57:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickOnFilmsImageTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="tearDown" is-config="true" duration-ms="1434" started-at="2019-02-01T18:57:57Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T18:57:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T18:57:57Z" finished-at="2019-02-01T18:57:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsFilmsPageTest.verifyClickOnFilmsImageTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyClickOnFilmsImageTest status=SUCCESS method=StarwarsFilmsPageTest.verifyClickOnFilmsImageTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="setUp" is-config="true" duration-ms="11302" started-at="2019-02-01T18:57:59Z" finished-at="2019-02-01T18:58:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsFilmsPageTest.verifyClickOnFilmsLinkTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyClickOnFilmsLinkTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="verifyClickOnFilmsLinkTest" duration-ms="10906" started-at="2019-02-01T18:58:10Z" finished-at="2019-02-01T18:58:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickOnFilmsLinkTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="tearDown" is-config="true" duration-ms="1643" started-at="2019-02-01T18:58:21Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T18:58:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T18:58:21Z" finished-at="2019-02-01T18:58:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsFilmsPageTest.verifyClickOnFilmsLinkTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyClickOnFilmsLinkTest status=SUCCESS method=StarwarsFilmsPageTest.verifyClickOnFilmsLinkTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="setUp" is-config="true" duration-ms="20932" started-at="2019-02-01T18:58:22Z" finished-at="2019-02-01T18:58:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsFilmsPageTest.verifyFilmBuyOption(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyFilmBuyOption([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="verifyFilmBuyOption" duration-ms="26786" started-at="2019-02-01T18:58:43Z" data-provider="BuyOption" finished-at="2019-02-01T18:59:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@3c01cfa1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFilmBuyOption -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T18:59:10Z" finished-at="2019-02-01T18:59:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsFilmsPageTest.verifyFilmBuyOption(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyFilmBuyOption status=SUCCESS method=StarwarsFilmsPageTest.verifyFilmBuyOption([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="tearDown" is-config="true" duration-ms="1938" started-at="2019-02-01T18:59:10Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T18:59:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="setUp" is-config="true" duration-ms="11236" started-at="2019-02-01T18:59:12Z" finished-at="2019-02-01T18:59:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsFilmsPageTest.verifyFilmBuyOption(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyFilmBuyOption([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="verifyFilmBuyOption" duration-ms="14208" started-at="2019-02-01T18:59:23Z" data-provider="BuyOption" finished-at="2019-02-01T18:59:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@45d2ade3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFilmBuyOption -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="tearDown" is-config="true" duration-ms="1658" started-at="2019-02-01T18:59:38Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T18:59:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T18:59:38Z" finished-at="2019-02-01T18:59:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsFilmsPageTest.verifyFilmBuyOption(java.lang.String[]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyFilmBuyOption status=SUCCESS method=StarwarsFilmsPageTest.verifyFilmBuyOption([Ljava.lang.String;)[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="setUp" is-config="true" duration-ms="16693" started-at="2019-02-01T18:59:39Z" finished-at="2019-02-01T18:59:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsFilmsPageTest.verifyFilmsMenuOption() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyFilmsMenuOption()[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="verifyFilmsMenuOption" duration-ms="1399" started-at="2019-02-01T18:59:56Z" finished-at="2019-02-01T18:59:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFilmsMenuOption -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="takeScreenShot" is-config="true" duration-ms="1" started-at="2019-02-01T18:59:57Z" finished-at="2019-02-01T18:59:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsFilmsPageTest.verifyFilmsMenuOption() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyFilmsMenuOption status=SUCCESS method=StarwarsFilmsPageTest.verifyFilmsMenuOption()[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="tearDown" is-config="true" duration-ms="1983" started-at="2019-02-01T18:59:57Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T18:59:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="setUp" is-config="true" duration-ms="18107" started-at="2019-02-01T18:59:59Z" finished-at="2019-02-01T19:00:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsFilmsPageTest.verifyMovieBuyOption() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyMovieBuyOption()[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="verifyMovieBuyOption" duration-ms="6033" started-at="2019-02-01T19:00:17Z" finished-at="2019-02-01T19:00:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMovieBuyOption -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="tearDown" is-config="true" duration-ms="1491" started-at="2019-02-01T19:00:23Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:00:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:00:23Z" finished-at="2019-02-01T19:00:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsFilmsPageTest.verifyMovieBuyOption() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyMovieBuyOption status=SUCCESS method=StarwarsFilmsPageTest.verifyMovieBuyOption()[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="setUp" is-config="true" duration-ms="18975" started-at="2019-02-01T19:00:25Z" finished-at="2019-02-01T19:00:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsFilmsPageTest.verifySeeAllOptionsFilmTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifySeeAllOptionsFilmTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="verifySeeAllOptionsFilmTest" duration-ms="6107" started-at="2019-02-01T19:00:44Z" finished-at="2019-02-01T19:00:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySeeAllOptionsFilmTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="tearDown" is-config="true" duration-ms="1785" started-at="2019-02-01T19:00:50Z" depends-on-methods="com.sw.ui.Starwars.CommonTest.takeScreenShot" finished-at="2019-02-01T19:00:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="takeScreenShot(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112]" name="takeScreenShot" is-config="true" duration-ms="0" started-at="2019-02-01T19:00:50Z" finished-at="2019-02-01T19:00:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sw.ui.Starwars.StarwarsFilmsPageTest.verifySeeAllOptionsFilmTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifySeeAllOptionsFilmTest status=SUCCESS method=StarwarsFilmsPageTest.verifySeeAllOptionsFilmTest()[pri:0, instance:com.sw.ui.Starwars.StarwarsFilmsPageTest@eb21112] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+      </class> <!-- com.sw.ui.Starwars.StarwarsFilmsPageTest -->
     </test> <!-- test -->
   </suite> <!-- Suite -->
 </testng-results>
