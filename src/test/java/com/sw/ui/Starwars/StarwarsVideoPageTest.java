@@ -116,7 +116,7 @@ public class StarwarsVideoPageTest extends CommonTest {
 	     *  Expected result: Video should be able to play, pause or stop.
 	     * @throws Exception
 	     */
-	    @Test(groups = { "FunctionalTest1"})
+	    @Test(groups = { "FunctionalTest"})
 	    public void validatePlayingVideoTest()  throws Exception{
 	    	
 	    	pageObjects=new StarwarsSignUpPage(driver);
