@@ -38,6 +38,7 @@ public class StarwarsLoginTest extends CommonTest {
 	          
 	   	    lib.waitForElementIsDisplayed(homeObjects.StarwarsLogo,30);
 		    assertTrue(lib.isElementDisplayed(homeObjects.StarwarsLogo)," StarWars Logo not displayed");
+		    log.info("Logged in to Starwars Page Successfully");
 	        //Login in to the starwars account
 	        homeObjects.clickSignInLink();
 	        Thread.sleep(20000);
@@ -53,7 +54,7 @@ public class StarwarsLoginTest extends CommonTest {
 		       driver.switchTo().frame(0);
 			      
 		       int size2 = driver.findElements(By.tagName("iframe")).size();
-		       System.out.println("SizeAgain again::::"+size1);
+		       System.out.println("SizeAgain again::::"+size2);
 		      
 	        //s((JavascriptExecutor)driver).executeScript("arguments[0].click()", pageObjects.CloseButton);
 	       // lib.switchWindowBasedOnPageSource("Account Dialog", driver);
@@ -77,7 +78,7 @@ public class StarwarsLoginTest extends CommonTest {
 	     * Expected: Clicking on the Sign Up link should show up sign up page with all the foelds editable
 	     * @throws Exception
 	     */
-	    @Test(groups = { "FunctionalTest1"})
+	    @Test(groups = { "FunctionalTest"})
 	     public void starwarsSignUpPageValidationTest()  throws Exception{
 	    	
 	    	pageObjects=new StarwarsSignUpPage(driver);
@@ -87,6 +88,8 @@ public class StarwarsLoginTest extends CommonTest {
 		      
 	        lib.waitForElementIsDisplayed(homeObjects.StarwarsLogo,30);
 		    assertTrue(lib.isElementDisplayed(homeObjects.StarwarsLogo)," StarWars Logo not displayed");
+		    
+		    log.info("Logged in to Starwars Page Successfully");
 		    homeObjects.clickSignUpLink();
 		    
 		     
@@ -104,15 +107,21 @@ public class StarwarsLoginTest extends CommonTest {
 		    assertTrue(lib.isElementDisplayed(pageObjects.birthMonth)," Birth Month field  not displayed");
 		    assertTrue(lib.isElementDisplayed(pageObjects.birthYear)," Birth Year field not displayed");
 		    assertTrue(lib.isElementDisplayed(pageObjects.showPassword)," Show Password text  not displayed");
-		    assertTrue(lib.isElementDisplayed(pageObjects.showPasswordCheckbox)," Show Password text  not displayed");
-			   
+		      
 		    JavascriptExecutor js = (JavascriptExecutor) driver;
 			js.executeScript("window.scrollBy(0,1000)");
 		    assertTrue(lib.isElementDisplayed(pageObjects.createNewAccount)," Create Account button  not displayed");
 			   
 	     
 	    }
-	    
+	    /**
+	     * 
+	     * Verify Sign In in with Invalid  Username/password
+	     * 
+	     * Expected: User should be prompted with error message
+	     * @param args
+	     * @throws Exception
+	     */
 	    
 	    @Test(groups = { "FunctionalTest"},dataProvider="InvalidLoginDetails")
 	    public void starwarsLoginWithInavlidDataTest(String args[])  throws Exception{
@@ -123,6 +132,8 @@ public class StarwarsLoginTest extends CommonTest {
 	          
 	   	    lib.waitForElementIsDisplayed(homeObjects.StarwarsLogo,30);
 		    assertTrue(lib.isElementDisplayed(homeObjects.StarwarsLogo)," StarWars Logo not displayed");
+		    
+		    log.info("Logged in to Starwars Page Successfully");
 	        //Login in to the starwars account
 	        homeObjects.clickSignInLink();
 	        Thread.sleep(2000);
@@ -160,9 +171,9 @@ public class StarwarsLoginTest extends CommonTest {
 
 	    
 	    /**
-	     * Verify  Sign In to Starwars with Valid Account
+	     * Verify  Logout functionality
 	     * 
-	     *  Expected result: User should be able to login successfully
+	     *  Expected result: User should be able to logout successfully
 	     * @throws Exception
 	     */
 	    @Test(groups = { "FunctionalTest"})
@@ -175,6 +186,7 @@ public class StarwarsLoginTest extends CommonTest {
 	          
 	   	    lib.waitForElementIsDisplayed(homeObjects.StarwarsLogo,30);
 		    assertTrue(lib.isElementDisplayed(homeObjects.StarwarsLogo)," StarWars Logo not displayed");
+		    log.info("Logged in to Starwars Page Successfully");
 	        //Login in to the starwars account
 	        homeObjects.clickSignInLink();
 	        Thread.sleep(20000);
@@ -190,7 +202,7 @@ public class StarwarsLoginTest extends CommonTest {
 		       driver.switchTo().frame(0);
 			      
 		       int size2 = driver.findElements(By.tagName("iframe")).size();
-		       System.out.println("SizeAgain again::::"+size1);
+		       System.out.println("SizeAgain again::::"+size2);
 		      
 	        //s((JavascriptExecutor)driver).executeScript("arguments[0].click()", pageObjects.CloseButton);
 	       // lib.switchWindowBasedOnPageSource("Account Dialog", driver);
@@ -208,6 +220,48 @@ public class StarwarsLoginTest extends CommonTest {
 	        pageObjects.LogOut.click();
 	        
 	        assertTrue(lib.isElementDisplayed(homeObjects.SignInLink),"Sign In page not displayed after logout");
+		      
+	    	
+	    }
+	    
+	    
+	    /**
+	     * Verify Login Cancel option
+	     * 
+	     *  Expected result: User should be able to Optout of log in and home page should be shown
+	     * @throws Exception
+	     */
+	    @Test(groups = { "FunctionalTest"})
+	    public void starwarsLogInCanelOptionTest()  throws Exception{
+	    	
+	    	pageObjects=new StarwarsSignUpPage(driver);
+	    	homeObjects=new StarWarsHomePageObjects(driver);
+	    	lib=new StarwarsLibrary(driver);
+	        properties.load(new FileReader(new File(System.getProperty("user.dir")+"\\configdata\\config.properties")));
+	          
+	   	    lib.waitForElementIsDisplayed(homeObjects.StarwarsLogo,30);
+		    assertTrue(lib.isElementDisplayed(homeObjects.StarwarsLogo)," StarWars Logo not displayed");
+		    log.info("Logged in to Starwars Page Successfully");
+	        //Login in to the starwars account
+	        homeObjects.clickSignInLink();
+	        Thread.sleep(20000);
+	       ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();",pageObjects.Iframe );
+	       
+	       int size = driver.findElements(By.tagName("iframe")).size();
+	       System.out.println("Size::::"+size);
+	       driver.switchTo().frame(pageObjects.Iframe);
+	        
+	       driver.switchTo().frame(0);
+		   lib.waitForElementIsDisplayed(pageObjects.CloseButton, 12);
+	        Thread.sleep(6000);    
+		    pageObjects.setEmailId(properties.getProperty("username"));
+	        pageObjects.setPassword(properties.getProperty("password"));
+	        pageObjects.clickSignInClose();
+	        
+	        driver.switchTo().defaultContent();
+	        Thread.sleep(2000);
+	          
+	        assertTrue(lib.isElementDisplayed(homeObjects.SignInLink),"Sign In page not displayed after optout of SignIn");
 		      
 	    	
 	    }

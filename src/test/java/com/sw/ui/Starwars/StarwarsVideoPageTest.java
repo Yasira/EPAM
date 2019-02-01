@@ -2,9 +2,6 @@ package com.sw.ui.Starwars;
 
 import static org.testng.Assert.assertTrue;
 
-import java.io.File;
-import java.io.FileReader;
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -24,7 +21,7 @@ public class StarwarsVideoPageTest extends CommonTest {
 	    /**
 	     * Verify  Video Link Menu option
 	     * 
-	     *  Expected result: Video Menuoption should show up the video details
+	     *  Expected result: Video Menu option should show up the video details
 	     * @throws Exception
 	     */
 	    @Test(groups = { "FunctionalTest"})
@@ -36,6 +33,7 @@ public class StarwarsVideoPageTest extends CommonTest {
 	    	lib=new StarwarsLibrary(driver);
 	          
 	   	    lib.waitForElementIsDisplayed(homeObjects.StarwarsLogo,30);
+	   	    log.info("Logged in to Starwars Page Successfully");
 		    assertTrue(lib.isElementDisplayed(homeObjects.StarwarsLogo)," StarWars Logo not displayed");
 		    
 		    videoObjects.clickVideoLink();
@@ -44,7 +42,7 @@ public class StarwarsVideoPageTest extends CommonTest {
 		    assertTrue(lib.isElementDisplayed(videoObjects.VideoSearchField)," Video search field not displayed");
 		    assertTrue(lib.isElementDisplayed(videoObjects.FirstVideo)," First video image displayed");
 		    assertTrue(lib.isElementDisplayed(videoObjects.FirstVideoTitle)," First Video title displayed");
-			            
+		    log.info(" Starwars Video  Page  validated Successfully");           
 	    	
 	    }
 	    
@@ -61,8 +59,9 @@ public class StarwarsVideoPageTest extends CommonTest {
 	    	homeObjects=new StarWarsHomePageObjects(driver);
 	    	videoObjects= new StarwarsVideoPageObjects(driver);
 	    	lib=new StarwarsLibrary(driver);
-	          
+	         
 	   	    lib.waitForElementIsDisplayed(homeObjects.StarwarsLogo,30);
+	   	    log.info("Logged in to Starwars Page Successfully");
 		    assertTrue(lib.isElementDisplayed(homeObjects.StarwarsLogo)," StarWars Logo not displayed");
 		    
 		    videoObjects.clickVideoLink();
@@ -73,9 +72,42 @@ public class StarwarsVideoPageTest extends CommonTest {
 		    lib.waitForElementIsDisplayed(videoObjects.SearchResultText,30);
 			assertTrue(videoObjects.SearchResultText.getText().contains(("Starwars").toUpperCase()),"Not able to see the result in Star wars") ;  
 		    assertTrue(lib.isElementDisplayed(videoObjects.ResultVideoLinks)," Result video links not displayed");
-		              
+		    log.info(" Starwars Video Search Page  validated Successfully");           
 	    	
 	    }
+	    
+	    /**
+	     * Verify  Video Search bar option , Give input as Invalid data
+	     * 
+	     *  Expected result: Result videos should not be shown, No result message should show up
+	     * @throws Exception
+	     */
+	    @Test(groups = { "FunctionalTest"})
+	    public void verifyVideoSearchOptionWithInvalidDataTest()  throws Exception{
+	    	
+	    	pageObjects=new StarwarsSignUpPage(driver);
+	    	homeObjects=new StarWarsHomePageObjects(driver);
+	    	videoObjects= new StarwarsVideoPageObjects(driver);
+	    	lib=new StarwarsLibrary(driver);
+	         
+	   	    lib.waitForElementIsDisplayed(homeObjects.StarwarsLogo,30);
+	   	    log.info("Logged in to Starwars Page Successfully");
+		    assertTrue(lib.isElementDisplayed(homeObjects.StarwarsLogo)," StarWars Logo not displayed");
+		    
+		    videoObjects.clickVideoLink();
+		    lib.waitForElementIsDisplayed(videoObjects.VideoSearchButton,30);
+		    assertTrue(lib.isElementDisplayed(videoObjects.VideoSearchButton)," Video Search button  not displayed");
+		    assertTrue(lib.isElementDisplayed(videoObjects.VideoSearchField)," Video search field not displayed");
+		    videoObjects.setSearchVideo("!@#");
+		    
+		    lib.waitForElementIsDisplayed(videoObjects.VideoSearchNoResult,30);
+			assertTrue(videoObjects.VideoSearchNoResult.getText().contains(("THERE ARE NO RESULTS FOR").toUpperCase()),"Not able to see the no result message in Star wars") ;  
+		    log.info(" Starwars Video Search Page  validated Successfully");           
+	    	
+	    }
+	    
+	    
+	    
 	    
 	    
 	    /**
@@ -94,6 +126,7 @@ public class StarwarsVideoPageTest extends CommonTest {
 	          
 	   	    lib.waitForElementIsDisplayed(homeObjects.StarwarsLogo,30);
 		    assertTrue(lib.isElementDisplayed(homeObjects.StarwarsLogo)," StarWars Logo not displayed");
+		    log.info("Logged in to Starwars Page Successfully");
 		    
 		    videoObjects.clickVideoLink();
 		    lib.waitForElementIsDisplayed(videoObjects.VideoSearchButton,30);
@@ -101,8 +134,8 @@ public class StarwarsVideoPageTest extends CommonTest {
 		    assertTrue(lib.isElementDisplayed(videoObjects.FirstVideoTitle)," Video search field not displayed");
 		    videoObjects.clickViewVideoTitle();
 		    assertTrue(lib.isElementDisplayed(videoObjects.FirstVideoResultPage)," Video search result not displayed");
-		     String videoLink=videoObjects.clickOnResultVideo();
-		     assertTrue(lib.isElementDisplayed(videoObjects.PlayVideo)," Play Video option not displayed");
+		    videoObjects.clickOnResultVideo();
+		    // assertTrue(lib.isElementDisplayed(videoObjects.PlayVideo)," Play Video option not displayed");
 		     lib.waitForElementIsDisplayed(videoObjects.pauseVideoIcon, 20);
 		     assertTrue(lib.isElementDisplayed(videoObjects.pauseVideoIcon)," Pause Video option not displayed");
 		     videoObjects.pauseVideoIcon.click();
@@ -112,6 +145,8 @@ public class StarwarsVideoPageTest extends CommonTest {
 		     lib.waitForElementIsDisplayed(videoObjects.pauseVideoIcon, 20);
 		     assertTrue(lib.isElementDisplayed(videoObjects.VideoVolumeIcon)," Play Video option not displayed");
 		     assertTrue(lib.isElementDisplayed(videoObjects.pauseVideoIcon)," Pause Video option not displayed");
+		     
+		     log.info(" Starwars Video  playing  validated Successfully"); 
 			    	
 	    }
 	
@@ -132,7 +167,7 @@ public class StarwarsVideoPageTest extends CommonTest {
 	          
 	   	    lib.waitForElementIsDisplayed(homeObjects.StarwarsLogo,30);
 		    assertTrue(lib.isElementDisplayed(homeObjects.StarwarsLogo)," StarWars Logo not displayed");
-		    
+		    log.info("Logged in to Starwars Page Successfully");
 		    videoObjects.clickVideoLink();
 		    lib.waitForElementIsDisplayed(videoObjects.VideoSearchButton,30);
 		    JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -150,6 +185,7 @@ public class StarwarsVideoPageTest extends CommonTest {
 				   
 		    }
 	    	
+		    log.info(" Starwars Video  Page browse options for all the browse validated Successfully"); 
 	    }
 	
 

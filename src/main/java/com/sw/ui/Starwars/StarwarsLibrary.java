@@ -36,6 +36,7 @@ public class StarwarsLibrary {
 	 public  void waitForElementIsDisplayed(WebElement element, long timeOutInSeconds) throws Exception {
 				WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds); 
 				wait.until(ExpectedConditions.visibilityOf(element));
+				log.info("Waiting for the element to displayed");
 
 	 }
 	 
@@ -51,7 +52,7 @@ public class StarwarsLibrary {
 					return true;
 				} 
 				
-				else {System.out.println("Unable to find element"+element);}
+				else {log.info("Unable to find element"+element);}
 			} catch (NoSuchElementException e) {
 				e.getMessage();
 				
@@ -66,14 +67,14 @@ public class StarwarsLibrary {
 			for(String window : availableWindows){
 				driver.switchTo().window(window);
 				if(driver.getPageSource().contains(somePageSourceContent)){
-					System.out.println("url"+driver.getCurrentUrl());
+					log.info("url"+driver.getCurrentUrl());
 					break;
 				}
 			}
 		}
 	 
 	  public static String readPropertiesFile(String file_name, String key) throws IOException{
-			System.out.println("file name is "+file_name);
+			log.info("file name is "+file_name);
 			
 			try{
 			Properties prop = new Properties();

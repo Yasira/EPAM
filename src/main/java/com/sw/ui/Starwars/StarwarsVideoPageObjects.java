@@ -1,14 +1,14 @@
 package com.sw.ui.Starwars;
 
 import java.util.List;
-import java.util.concurrent.TimeUnit;
+
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.JavascriptExecutor;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.FindBys;
+
 import org.openqa.selenium.support.PageFactory;
 
 public class StarwarsVideoPageObjects {
@@ -44,7 +44,7 @@ public class StarwarsVideoPageObjects {
 	@FindBy(xpath=".//*[@id='ref-1-0']/div[1]/div/div/ul/div/div/div/div/div/div[2]/div[2]/div/h3/a")
 	WebElement FirstVideoResultPage;
 	
-	@FindBy(xpath="//*[@id='overlay-portal']")
+	@FindBy(xpath="//*[@id=\"player-gui\"]/div[2]")
 	WebElement PlayVideo;
 	
 	@FindBy(xpath=".//*[@id='main']/div/div/div[2]/div[2]/section/ul/li/div[1]/a/h3")
@@ -66,9 +66,8 @@ public class StarwarsVideoPageObjects {
 	@FindBy(css="#player-gui > div.playkit-bottom-bar > div.playkit-right-controls > div.playkit-control-button-container.playkit-volume-control > button > i.playkit-icon.playkit-icon-volume-waves")
     WebElement VideoVolumeIcon;
 	
-	
-	
-	
+	@FindBy(xpath=".//*[@id='main']/div/div/div[2]/div/h2")
+	WebElement VideoSearchNoResult;
 	
 	
 	
@@ -86,11 +85,13 @@ public class StarwarsVideoPageObjects {
 	public void clickVideoLink() throws Exception {
 		VideoLink.click();
 		lib.waitForElementIsDisplayed(VideoSearchField, 20);
+		log.info("Click on video link");
 	}
 	
 	public void setSearchVideo(String videoname) {
 		VideoSearchField.sendKeys(videoname);
 		VideoSearchButton.click();
+		log.info("Search for  video link");
 		
 	}
 	
@@ -101,38 +102,19 @@ public class StarwarsVideoPageObjects {
 	
 	public void checkAutoPopVideoOption(String video) {
 		VideoSearchField.sendKeys(video);
+		log.info("Drop down shown for Video details");
 	}
 
 	public String clickOnResultVideo() throws Exception{
 		
 		String urlStr = FirstVideoResultPage.getAttribute("href");
 		FirstVideoResultPage.click();
-		lib.waitForElementIsDisplayed(PlayVideo, 35);
+		//lib.waitForElementIsDisplayed(PlayVideo, 30);
+		log.info("Result video shown::"+urlStr);
 		return urlStr;
 	}
 	
-	public void playVideo(String urlStr) throws Exception{
-		
-		
-		System.out.println("Video Url : " + urlStr);
-		//driver.navigate().to(urlStr);
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-
-		JavascriptExecutor jse = (JavascriptExecutor) driver;
-		//Click on play button
-		//jse.executeScript("KalturaPlayer().play();" );
-		Thread.sleep(2000);
-		//Pause
-		jse.executeScript("arguments[0].play();",playVideoIcon );
-		Thread.sleep(2000);
-		
-		jse.executeScript("arguments[0].pause();",pauseVideoIcon );
-		Thread.sleep(2000);
-		//Play
-		//jse.executeScript("jwplayer().play();");
-		Thread.sleep(2000);
-		
-	}
+	
 	
 	
 }

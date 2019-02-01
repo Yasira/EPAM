@@ -105,6 +105,13 @@ public class StarWarsHomePageObjects {
 	@FindBy(xpath=".//*[@id='main']/div/div/div[2]/div[1]/h2")
 	WebElement SearchResultText;
 	
+	@FindBy(xpath=".//*[@id='main']/div/div/div[2]/div/h2")
+	WebElement SearchResultTextForInvalid;
+	
+	@FindBy(xpath=".//*[@id='ref-1-1']/div[1]/div[1]/h2")
+	WebElement SearchResultDataBank;
+	
+	
 	
 	StarwarsLibrary  lib;
 	
@@ -135,9 +142,23 @@ public class StarWarsHomePageObjects {
 		SearchField.sendKeys(starwars);
 		SearchField.submit();
 		Thread.sleep(5000);
+		log.info("Searching for Starwars movies");
 	}
 	
 	public boolean getSearchResult() throws Exception{
+		
 		return lib.isElementDisplayed(SearchResultText);
+	}
+	
+	public String getSearchResultWithInvalid() throws Exception{
+		 lib.isElementDisplayed(SearchResultTextForInvalid);
+		  return SearchResultTextForInvalid.getText();
+		 
+	}
+	
+	public String getSearchResultForblank() throws Exception{
+		 lib.isElementDisplayed(SearchResultDataBank);
+		  return SearchResultDataBank.getText();
+		 
 	}
 }

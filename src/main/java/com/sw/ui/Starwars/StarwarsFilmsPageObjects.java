@@ -44,6 +44,9 @@ public class StarwarsFilmsPageObjects {
 	@FindBy(xpath=".//*[@id='ref-1-2']/div/div/h2[contains(.,'Characters ')]")
 	WebElement Characters;
 	
+	@FindBy(xpath=".//*[@id='ref-1-1']/div/div[2]/div[2]/div[1]/div/div/ul/li/a")
+	WebElement BuyMovieOptions;
+	
     StarwarsLibrary  lib;
 
 	
@@ -64,17 +67,20 @@ public class StarwarsFilmsPageObjects {
 	public void  clickSeeAllOption() throws Exception{
 		SeeAllOption.click();
 		lib.waitForElementIsDisplayed(SeeAllFirstFilm, 15);
+		log.info("Click on See All option");
 	}
 	
 	public void clickFilmTitle() throws Exception {
 		FilmsLink.click();
 		lib.waitForElementIsDisplayed(MoviewTitle, 20);
+		log.info("Click on movie link");
 		
 	}
 	
 	public void clickFilmImage() throws Exception {
 		FilmsLink.click();
 		lib.waitForElementIsDisplayed(MoviewTitle, 20);
+		log.info("Click on movie image");
 		
 	}
 	

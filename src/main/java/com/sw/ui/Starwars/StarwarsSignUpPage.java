@@ -91,6 +91,9 @@ public class StarwarsSignUpPage {
 
 	@FindBy(xpath="//*[@id='nav-utility']/div[2]/div[2]/div[2]/div[2]")
 	WebElement LogOut;
+	
+	@FindBy(id="close")
+	WebElement Close;
 
 	
 	
@@ -112,11 +115,16 @@ public class StarwarsSignUpPage {
 	public void  setPassword(String Password) throws Exception{
 		// lib.waitForElementIsDisplayed(password, 20);
 		passwordSign.sendKeys(Password);
+		log.info("Type on password link");
 	}
 	public void clickSignIn() {
 		SignIn.click();
+		log.info("click on Sign In link");
 	}
 	
-	
+	public void clickSignInClose() {
+		Close.click();
+		log.info("click on Sign In link");
+	}
 	
 }

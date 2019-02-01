@@ -20,7 +20,7 @@ public class StarwarsFilmsPageTest extends CommonTest {
 	
 	/**
 	 * 
-	 * Valiodating Starwars Films Page
+	 * Validating Starwars Films Page
 	 * Expected Result: User should be able to see Films listed on the Films page
 	 * @param args
 	 * @throws Exception
@@ -34,6 +34,7 @@ public class StarwarsFilmsPageTest extends CommonTest {
 			
 		 lib.waitForElementIsDisplayed(homeObjects.StarwarsLogo,30);
 		 assertTrue(lib.isElementDisplayed(homeObjects.StarwarsLogo)," StarWars Logo not displayed");
+		 log.info("Logged in to Starwars Page Successfully");
 		 filmObjects.clickFilmsLink();
 		 JavascriptExecutor js = (JavascriptExecutor) driver;
 		 js.executeScript("window.scrollBy(0,1000)");
@@ -46,7 +47,7 @@ public class StarwarsFilmsPageTest extends CommonTest {
 	 
 	 /**
 		 * 
-		 * Valiodating Starwars Click on Film Link Option
+		 * Validating Starwars Click on Film Link Option
 		 * Expected Result: User should be able to see Films listed on the Films page
 		 * @param args
 		 * @throws Exception
@@ -60,6 +61,7 @@ public class StarwarsFilmsPageTest extends CommonTest {
 				
 			 lib.waitForElementIsDisplayed(homeObjects.StarwarsLogo,30);
 			 assertTrue(lib.isElementDisplayed(homeObjects.StarwarsLogo)," StarWars Logo not displayed");
+			 log.info("Logged in to Starwars Page Successfully");
 			 filmObjects.clickFilmsLink();
 			 assertTrue(lib.isElementDisplayed(filmObjects.FirstFilmLink),"First Film  is not shown");
 			 //JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -81,9 +83,9 @@ public class StarwarsFilmsPageTest extends CommonTest {
 		 
 		 /**
 			 * 
-			 * Valiodating Starwars Click on Film Link Option
+			 * Validating Starwars Click on Film Image Option
 			 * Expected Result: User should be able to see Films listed on the Films page
-			 * @param args
+			 * 
 			 * @throws Exception
 			 */
 		     
@@ -95,6 +97,7 @@ public class StarwarsFilmsPageTest extends CommonTest {
 					
 				 lib.waitForElementIsDisplayed(homeObjects.StarwarsLogo,30);
 				 assertTrue(lib.isElementDisplayed(homeObjects.StarwarsLogo)," StarWars Logo not displayed");
+				 log.info("Logged in to Starwars Page Successfully");
 				 filmObjects.clickFilmsLink();
 				 assertTrue(lib.isElementDisplayed(filmObjects.FirstFilmLink),"First Film  is not shown");
 				 
@@ -115,7 +118,7 @@ public class StarwarsFilmsPageTest extends CommonTest {
 			 
 			 /**
 				 * 
-				 * Validating Starwars Click on Film Link Option
+				 * Validating Starwars Click on SeeAll option
 				 * Expected Result: User should be able to see Films listed on the Films page
 				 * @param args
 				 * @throws Exception
@@ -129,6 +132,7 @@ public class StarwarsFilmsPageTest extends CommonTest {
 						
 					 lib.waitForElementIsDisplayed(homeObjects.StarwarsLogo,30);
 					 assertTrue(lib.isElementDisplayed(homeObjects.StarwarsLogo)," StarWars Logo not displayed");
+					 log.info("Logged in to Starwars Page Successfully");
 					 filmObjects.clickFilmsLink();
 					 assertTrue(lib.isElementDisplayed(filmObjects.FirstFilmLink),"First Film  is not shown");
 					 //JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -168,6 +172,7 @@ public class StarwarsFilmsPageTest extends CommonTest {
 				
 			 lib.waitForElementIsDisplayed(homeObjects.StarwarsLogo,30);
 			 assertTrue(lib.isElementDisplayed(homeObjects.StarwarsLogo)," StarWars Logo not displayed");
+			 log.info("Logged in to Starwars Page Successfully");
 			 filmObjects.clickFilmsLink();
 			 assertTrue(lib.isElementDisplayed(filmObjects.FirstFilmLink),"First Film  is not shown");
 				
@@ -189,6 +194,42 @@ public class StarwarsFilmsPageTest extends CommonTest {
 					 
 		 }
 			
+		 
+		 /**
+			 * 
+			 * Verify Movie Buy option
+			 * 
+			 * 
+			 * Expected	: User should be able to see different buying option overlay
+			 * 
+			 * 
+			 */
+			 @Test(groups= {"FunctionalTest"})
+		     public void verifyMovieBuyOption()  throws Exception{
+				 homeObjects=new StarWarsHomePageObjects(driver);
+				 lib=new StarwarsLibrary(driver);
+				 filmObjects=new StarwarsFilmsPageObjects(driver);
+					
+				 lib.waitForElementIsDisplayed(homeObjects.StarwarsLogo,30);
+				 assertTrue(lib.isElementDisplayed(homeObjects.StarwarsLogo)," StarWars Logo not displayed");
+				 log.info("Logged in to Starwars Page Successfully");
+				 filmObjects.clickFilmsLink();
+				 assertTrue(lib.isElementDisplayed(filmObjects.FirstFilmLink),"First Film  is not shown");
+					
+				 Actions actions = new Actions(driver);
+				 actions.moveToElement(filmObjects.FirstFilmImage).click().perform();
+				  
+				 lib.waitForElementIsDisplayed(filmObjects.MoviewTitle,20);
+				 assertTrue(lib.isElementDisplayed(filmObjects.MoviewTitle),"First Film title   is not shown");
+				 
+				 assertTrue(lib.isElementDisplayed(filmObjects.BuyMovie)," Buy Movie option  not displayed");
+				 filmObjects.BuyMovie.click();
+				 
+				 assertTrue(lib.isElementDisplayed(filmObjects.BuyMovieOptions)," Buy movie options not displayed");
+				
+						 
+			 }
+		 
 		 
 		 @DataProvider(name="BuyOption")
 		    public Object[][] getDataFromDataprovider(){
