@@ -44,8 +44,9 @@ public class StarwarsVideoPageObjects {
 	@FindBy(xpath=".//*[@id='ref-1-0']/div[1]/div/div/ul/div/div/div/div/div/div[2]/div[2]/div/h3/a")
 	WebElement FirstVideoResultPage;
 	
-	@FindBy(xpath="//*[@id=\"player-gui\"]/div[2]")
+	@FindBy(css="#player-gui > div.playkit-overlay-action")
 	WebElement PlayVideo;
+	
 	
 	@FindBy(xpath=".//*[@id='main']/div/div/div[2]/div[2]/section/ul/li/div[1]/a/h3")
 	WebElement ResultVideoLinks;
@@ -57,11 +58,15 @@ public class StarwarsVideoPageObjects {
 	@FindBy(xpath=".//*[@id='ref-1-5']/div[1]/div[3]/div/ul/div[1]/div/div/div")
      WebElement browseVideosLinksResultVideo;
 	
-	@FindBy(css="#player-gui > div.playkit-bottom-bar > div.playkit-left-controls > div.playkit-control-button-container.playkit-control-play-pause > button > div > i.playkit-icon.playkit-icon-play")
+	//@FindBy(css="#player-gui > div.playkit-bottom-bar > div.playkit-left-controls > div.playkit-control-button-container.playkit-control-play-pause > button > div > i.playkit-icon.playkit-icon-play")
+	@FindBy(css="#player-gui > div.playkit-bottom-bar > div.playkit-left-controls > div.playkit-playback-controls > div > button > div > i.playkit-icon.playkit-icon-play")
     WebElement playVideoIcon;
 	
-	@FindBy(css="#player-gui > div.playkit-bottom-bar > div.playkit-left-controls > div.playkit-control-button-container.playkit-control-play-pause > button > div > i.playkit-icon.playkit-icon-pause")
+	
+	//@FindBy(css="#player-gui > div.playkit-bottom-bar > div.playkit-left-controls > div.playkit-control-button-container.playkit-control-play-pause > button > div > i.playkit-icon.playkit-icon-pause")
+	@FindBy(css="#player-gui > div.playkit-bottom-bar > div.playkit-left-controls > div.playkit-playback-controls > div > button > div > i.playkit-icon.playkit-icon-pause")
     WebElement pauseVideoIcon;
+	
 	
 	@FindBy(css="#player-gui > div.playkit-bottom-bar > div.playkit-right-controls > div.playkit-control-button-container.playkit-volume-control > button > i.playkit-icon.playkit-icon-volume-waves")
     WebElement VideoVolumeIcon;
@@ -109,6 +114,7 @@ public class StarwarsVideoPageObjects {
 		
 		String urlStr = FirstVideoResultPage.getAttribute("href");
 		FirstVideoResultPage.click();
+		lib.mouseOver(PlayVideo);
 		//lib.waitForElementIsDisplayed(PlayVideo, 30);
 		log.info("Result video shown::"+urlStr);
 		return urlStr;

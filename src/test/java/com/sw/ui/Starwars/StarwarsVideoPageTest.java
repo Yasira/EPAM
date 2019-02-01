@@ -116,7 +116,7 @@ public class StarwarsVideoPageTest extends CommonTest {
 	     *  Expected result: Video should be able to play, pause or stop.
 	     * @throws Exception
 	     */
-	    @Test(groups = { "FunctionalTest"})
+	    @Test(groups = { "FunctionalTest1"})
 	    public void validatePlayingVideoTest()  throws Exception{
 	    	
 	    	pageObjects=new StarwarsSignUpPage(driver);
@@ -135,12 +135,13 @@ public class StarwarsVideoPageTest extends CommonTest {
 		    videoObjects.clickViewVideoTitle();
 		    assertTrue(lib.isElementDisplayed(videoObjects.FirstVideoResultPage)," Video search result not displayed");
 		    videoObjects.clickOnResultVideo();
-		    // assertTrue(lib.isElementDisplayed(videoObjects.PlayVideo)," Play Video option not displayed");
-		     lib.waitForElementIsDisplayed(videoObjects.pauseVideoIcon, 20);
+		    assertTrue(lib.isElementDisplayed(videoObjects.PlayVideo)," Play Video option not displayed");
 		     assertTrue(lib.isElementDisplayed(videoObjects.pauseVideoIcon)," Pause Video option not displayed");
+		     lib.mouseOver(videoObjects.pauseVideoIcon);
 		     videoObjects.pauseVideoIcon.click();
 		     Thread.sleep(4000);
 		     assertTrue(lib.isElementDisplayed(videoObjects.playVideoIcon)," Play Video option not displayed");
+		     lib.mouseOver(videoObjects.playVideoIcon);
 		     videoObjects.playVideoIcon.click();
 		     lib.waitForElementIsDisplayed(videoObjects.pauseVideoIcon, 20);
 		     assertTrue(lib.isElementDisplayed(videoObjects.VideoVolumeIcon)," Play Video option not displayed");

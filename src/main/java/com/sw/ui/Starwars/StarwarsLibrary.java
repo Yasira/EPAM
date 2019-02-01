@@ -7,12 +7,17 @@ import java.util.HashSet;
 import java.util.Properties;
 
 import org.apache.log4j.Logger;
+
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.By;
 
 public class StarwarsLibrary {
 	
@@ -103,4 +108,20 @@ public class StarwarsLibrary {
 				return null;
 			}
 	  }
+	  
+	  /**
+		 *  Implementation of mouse over.
+		 *  Accepts the webElement at parameter and performs mouseOver action on that particular Element.
+		 *  @throws Exception
+		 *  
+		 *  
+		 */
+		public void mouseOver(WebElement element) throws Exception{
+
+			log.info("Enter MouseOver() Method");
+			Actions builder = new Actions(driver);
+			Action mouseOver = builder.moveToElement(element).build();
+			mouseOver.perform();
+			log.info("Exit mouseOver() Method");
+		}
 }
