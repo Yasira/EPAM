@@ -68,6 +68,14 @@ public class CommonTest {
 	        log.info("quit the driver");
 	    }
 	  	
+	  	/**
+	  	 * 
+	  	 * Adding screenshot method, Screenshot will be taken for failed testcases
+	  	 * @param m
+	  	 * @param result
+	  	 * @throws Exception
+	  	 */
+	  	
 	  	@AfterMethod(groups = { "commonTest" })
 		  public void takeScreenShot(Method m , ITestResult result)throws Exception {
 		 //getStatus of ITestResult returns 2 if the testcases is failed	 
