@@ -12,6 +12,7 @@ Starwars functional testuite
  2.Logs will be generated and stored under /Logs Folder(Will create the Folder for first time)
  3.Screenshot will capture for failed testcases and it will be shown in /output/screenshot folder(Folder create for first time)
  4.TestNG default Reporting is using for the report.
+ 5.Final result has been updated test-output-suite -->Index.html or emailable-report.html
  
  Testcase details
  
@@ -34,6 +35,8 @@ create and implement(code functional test cases for following pages:
   
 4.Configuration data:
  /configdata/config.properties
+ 
+ 
  
  
  
